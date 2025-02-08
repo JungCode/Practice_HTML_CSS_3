@@ -37,29 +37,53 @@
 
     &__bottom {
         background: $hero-background-color;
-        padding: 20px 10px;
-        @include flex($align: center, $justify: center, $gap: 130px);
+        padding: 50px 20px;
+        @include flex($gap: 75px, $direction: column);
 
-        @include mobile {
-            flex-direction: column;
-        }
     }
 
     &__content {
         max-width: 720px;
+        @include flex ($direction: column);
+
+        @include tablet {
+            align-items: center;
+        }
     }
 
     &__content h2 {
-        font-size: 56px;
+        font-size: pxToRem(56);
         font-weight: 900;
         line-height: 60px;
         margin-bottom: 27px;
+
+        @include tablet {
+            font-size: pxToRem(42);
+            line-height: normal;
+            margin-bottom: 24px;
+            margin-top: 10px;
+        }
+
+        @include mobile {
+            font-size: pxToRem(28);
+            margin-bottom: 20px;
+        }
     }
 
     &__content p {
         max-width: 580px;
         font-size: 18px;
         margin-bottom: 50px;
+
+        @include tablet {
+            font-size: pxToRem(16);
+            margin-bottom: 36px;
+        }
+
+        @include mobile {
+            font-size: pxToRem(14);
+            margin-bottom: 28px;
+        }
     }
 
     &__images {
@@ -124,6 +148,20 @@
     }
 }
 
+.hero-container {
+    @include flex($align: center, $justify: center, $gap: 130px);
+
+    @include tablet {
+        gap: 60px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    @include mobile {
+        gap: 40px;
+    }
+}
+
 .features-list {
     margin-top: 20px;
 
@@ -149,28 +187,34 @@
     &-main {
         @include flex($direction: column, $gap: 15px);
         position: relative;
-
     }
 
     &-header {
+        @include flex($align: center);
         border-radius: 31px;
         background: #FFF;
         box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.25);
         padding: 2px;
-        @include flex($align: center)
+        max-width: 287px;
+
+        @include tablet {}
     }
 
     &-header img {
-        width: 238px;
+        max-width: 238px;
     }
 
     &-aside {
-        @include flex($direction: column, $gap: 18px, $justify: center);
+        @include flex($direction: column, $justify: center);
+
+        @include mobile {
+            width: 100%;
+        }
     }
 
     &-card {
         &--main {
-            max-width: 286px;
+            // width: 100px;
         }
 
         &--small {}
@@ -187,4 +231,19 @@
     position: absolute;
     bottom: 15%;
     left: -15%;
+}
+
+.brands {
+    @include flex($justify: center, $align: center, $direction: column, $gap: 20px);
+
+    &__list {
+        @include flex($gap: 46px, $wrap: wrap, $justify: center);
+    }
+
+    &__title {
+        text-align: center;
+        color: #9CA0AC;
+        font-weight: 500;
+        font-size: 18px;
+    }
 }
