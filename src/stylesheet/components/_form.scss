@@ -1,0 +1,37 @@
+@use "../abstracts/" as *;
+
+.email-input {
+    padding: 13px 9px;
+    border: solid $secondary-color;
+    border-width: 3px 0px 3px 3px;
+    font-weight: 400;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 5px 0px 0px 5px;
+    max-width: 250px;
+    &:focus {
+        outline: none;
+    }
+}
+
+.submit-btn {
+    cursor: pointer;
+    font-size: 15px;
+    padding: 13px 9px;
+    border: 3px solid $secondary-color;
+    border-radius: 0px 5px 5px 0px;
+    transition-duration: 0.1s;
+    color: white;
+    background-color: $secondary-color;
+    font-weight: 700;
+    @include flex($gap: 10px);
+
+    &:hover {
+        background-color: $secondary-color-hover;
+        border-color: $secondary-color-hover;
+    }
+}
+
+.email-form {
+    display: flex;
+}

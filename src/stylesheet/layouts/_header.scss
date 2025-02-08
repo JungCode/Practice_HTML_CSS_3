@@ -1,0 +1,190 @@
+@use "../abstracts/" as *;
+
+/************************* header **********************/
+.header-main {
+    width: 100%;
+    @include flex($direction: column);
+
+    &__top {
+        @include flex($justify: space-around);
+        box-shadow: 0px 4px 4px rgba($color: #000000, $alpha: 0.25);
+        padding: 10px 0px;
+        z-index: 2;
+
+        @include mobile {
+            padding: 10px 10px;
+            @include flex($justify: space-between);
+        }
+    }
+
+    &__logo {
+        @include flex($align: center, $gap: 10px);
+
+        @include tablet {
+            gap: 7px;
+        }
+
+        @include mobile {
+            gap: 5px;
+        }
+    }
+
+    &__logo h1 {
+        color: $dark-text-color;
+        font-weight: bold;
+        font-size: pxToRem(18);
+    }
+
+    &__bottom {
+        background: $hero-background-color;
+        padding: 20px 10px;
+        @include flex($align: center, $justify: center, $gap: 130px);
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    &__content {
+        max-width: 720px;
+    }
+
+    &__content h2 {
+        font-size: 56px;
+        font-weight: 900;
+        line-height: 60px;
+        margin-bottom: 27px;
+    }
+
+    &__content p {
+        max-width: 580px;
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    &__images {
+        @include flex($gap: 20px);
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+}
+
+.menu {
+    &__list {
+        @include flex($align: center);
+        height: 100%;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__list li {
+        height: 100%;
+    }
+
+    &__link {
+        padding: 0px 15px;
+        color: $dark-text-color;
+        font-size: 16px;
+        height: 100%;
+        @include flex($gap: 5, $align: center, $justify: center);
+
+        @include tablet {
+            padding: 0px 10px;
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__link img {
+        fill: currentColor;
+        height: auto;
+    }
+
+    &__action {
+        @include flex($gap: 4px);
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__icon {
+        width: 25px;
+        display: none;
+
+        @include mobile {
+            display: inline-block
+        }
+    }
+}
+
+.features-list {
+    margin-top: 20px;
+
+    .features-list {
+        background-color: red;
+
+    }
+
+    font-size: 14px;
+    font-weight: 400;
+    @include flex($gap: 9px, $align: center);
+    list-style-type: disc;
+    list-style-position: inside;
+    line-height: 1;
+
+    &__item:nth-child(1) {
+        padding-top: 1px;
+        list-style-type: none;
+    }
+}
+
+.story {
+    &-main {
+        @include flex($direction: column, $gap: 15px);
+        position: relative;
+
+    }
+
+    &-header {
+        border-radius: 31px;
+        background: #FFF;
+        box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.25);
+        padding: 2px;
+        @include flex($align: center)
+    }
+
+    &-header img {
+        width: 238px;
+    }
+
+    &-aside {
+        @include flex($direction: column, $gap: 18px, $justify: center);
+    }
+
+    &-card {
+        &--main {
+            max-width: 286px;
+        }
+
+        &--small {}
+    }
+}
+
+.instagram-icon-container {
+    background-color: white;
+    border-radius: 24.462px;
+    background: #FFF;
+    padding: 14px;
+    @include flex($align: center);
+    box-shadow: 0px 0px 22.136px 0px rgba(0, 0, 0, 0.30);
+    position: absolute;
+    bottom: 15%;
+    left: -15%;
+}

@@ -1,3 +1,77 @@
-<header>
-    header
+<header class="header-main">
+    <div class="header-main__top">
+        <a href="javascript:void(0)" class="header-main__logo">
+            <img src="../assets/icons/ic-logo.svg" alt="logo icon">
+            <h1>embedsocial</h1>
+        </a>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li>
+                    <a href="javascript:void(0)" class="menu__link menu__link--dropbutton link-main">
+                        <p>Platform</p>
+                        <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.94 0.5L4 3.59042L7.06 0.5L8 1.45142L4 5.5L0 1.45142L0.94 0.5Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="menu__link link-main">Widgets</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="menu__link link-main">Templates</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="menu__link link-main">Pricing</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="menu__action">
+            <li>
+                <button class="primary-btn primary-btn--primary">Login</button>
+            </li>
+            <li>
+                <button class="primary-btn primary-btn--secondary">Start Free Trial</button>
+            </li>
+        </ul>
+        <img src="../assets/icons/ic-menu.svg" class="menu__icon" alt="menu icon">
+    </div>
+
+    <!-- Start of header-bottom -->
+    <div class="header-main__bottom">
+        <div class="header-main__content">
+            <h2>Display Instagram Stories
+                on any website,<span class="hightlight-bg"> in seconds.</span>
+            </h2>
+            <p>Display Instagram Stories Widget on your website, that auto-syncs, and updates each time you add a photo
+                in your active story. </p>
+            <include src="./components/email-form.html"></include>
+            <ul class="features-list">
+                <li class="features-list__item">Free 7-day trial</li>
+                <li class="features-list__item">Easy setup</li>
+                <li class="features-list__item">Cancel any time</li>
+            </ul>
+        </div>
+        <figure class="header-main__images">
+            <!-- Story Header -->
+            <div class="story-main">
+                <div class="story-header">
+                    <img src="../assets/images/desktop/img-ig-header.png" />
+                </div>
+                <!-- Main Story -->
+                <img class="story-card story-card--main" src="../assets/images/desktop/img-story-4.png" />
+
+                <!-- Instagram Icon -->
+                <div class="instagram-icon-container">
+                    <img src="../assets/icons/ic-instagram.svg" />
+                </div>
+            </div>
+            <!-- Small Stories -->
+            <div class="story-aside">
+                <img class="story-card story-card--small" src="../assets/images/desktop/img-story-2.png" />
+
+                <img class="story-card story-card--small" src="../assets/images/desktop/img-story-3.png" />
+            </div>
+        </figure>
+    </div>
 </header>
