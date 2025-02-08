@@ -35,7 +35,7 @@
 - Install the dependencies and devDependencies and start the server.
 
 ```sh
-cd Practice_HTML_CSS_3
+cd Practice_HTML_CSS_3/practice
 pnpm i
 pnpm dev
 Open on web: http://localhost:1234
