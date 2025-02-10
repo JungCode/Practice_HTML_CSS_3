@@ -25,4 +25,14 @@
     }
 }
 
-.title-secondary {}
+.title-secondary {
+    font-size: pxToRem(48);
+    font-weight: 900;
+    line-height: normal;
+    @include tablet{
+        font-size: pxToRem(38);
+    }
+    @include mobile{
+        text-align: center;
+    }
+}
