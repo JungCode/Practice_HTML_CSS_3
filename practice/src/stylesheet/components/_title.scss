@@ -33,3 +33,22 @@
         text-align: center;
     }
 }
+
+.title-primary {
+    font-size: pxToRem(56);
+    font-weight: 900;
+    line-height: 60px;
+    margin-bottom: 27px;
+
+    @include tablet {
+        font-size: pxToRem(42);
+        line-height: normal;
+        margin-top: 10px;
+    }
+
+    @include mobile {
+        font-size: pxToRem(34);
+    }
+}
+
+.title-secondary {}
