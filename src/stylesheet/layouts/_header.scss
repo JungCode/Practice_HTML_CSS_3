@@ -1,6 +1,7 @@
 @use "../abstracts/" as *;
 
 /************************* header **********************/
+
 .header-main {
     width: 100%;
     @include flex($direction: column);
@@ -40,6 +41,20 @@
         padding: 50px 20px;
         @include flex($gap: 75px, $direction: column);
 
+        .brands {
+            @include flex($justify: center, $align: center, $direction: column, $gap: 20px);
+
+            &__list {
+                @include flex($gap: 46px, $wrap: wrap, $justify: center);
+            }
+
+            &__title {
+                text-align: center;
+                color: #9CA0AC;
+                font-weight: 500;
+                font-size: pxToRem(14);
+            }
+        }
     }
 
     &__content {
@@ -60,19 +75,17 @@
         @include tablet {
             font-size: pxToRem(42);
             line-height: normal;
-            margin-bottom: 24px;
             margin-top: 10px;
         }
 
         @include mobile {
-            font-size: pxToRem(28);
-            margin-bottom: 20px;
+            font-size: pxToRem(34);
         }
     }
 
     &__content p {
         max-width: 580px;
-        font-size: 18px;
+        font-size: pxToRem(18);
         margin-bottom: 50px;
 
         @include tablet {
@@ -81,7 +94,7 @@
         }
 
         @include mobile {
-            font-size: pxToRem(14);
+            font-size: pxToRem(16);
             margin-bottom: 28px;
         }
     }
@@ -112,7 +125,7 @@
     &__link {
         padding: 0px 15px;
         color: $dark-text-color;
-        font-size: 16px;
+        font-size: pxToRem(16);
         height: 100%;
         @include flex($gap: 5, $align: center, $justify: center);
 
@@ -164,13 +177,7 @@
 
 .features-list {
     margin-top: 20px;
-
-    .features-list {
-        background-color: red;
-
-    }
-
-    font-size: 14px;
+    font-size: pxToRem(14);
     font-weight: 400;
     @include flex($gap: 9px, $align: center);
     list-style-type: disc;
@@ -187,6 +194,18 @@
     &-main {
         @include flex($direction: column, $gap: 15px);
         position: relative;
+
+        .instagram-icon-container {
+            background-color: white;
+            border-radius: 24.462px;
+            background: #FFF;
+            padding: 14px;
+            @include flex($align: center);
+            box-shadow: 0px 0px 22.136px 0px rgba(0, 0, 0, 0.30);
+            position: absolute;
+            bottom: 15%;
+            left: -15%;
+        }
     }
 
     &-header {
@@ -212,38 +231,6 @@
         }
     }
 
-    &-card {
-        &--main {
-            // width: 100px;
-        }
-
-        &--small {}
-    }
 }
 
-.instagram-icon-container {
-    background-color: white;
-    border-radius: 24.462px;
-    background: #FFF;
-    padding: 14px;
-    @include flex($align: center);
-    box-shadow: 0px 0px 22.136px 0px rgba(0, 0, 0, 0.30);
-    position: absolute;
-    bottom: 15%;
-    left: -15%;
-}
-
-.brands {
-    @include flex($justify: center, $align: center, $direction: column, $gap: 20px);
-
-    &__list {
-        @include flex($gap: 46px, $wrap: wrap, $justify: center);
-    }
-
-    &__title {
-        text-align: center;
-        color: #9CA0AC;
-        font-weight: 500;
-        font-size: 18px;
-    }
-}
+/************************* end of header **********************/
