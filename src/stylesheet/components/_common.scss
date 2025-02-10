@@ -1,0 +1,8 @@
+@use "../abstracts/" as *;
+
+.section-container{
+    padding: 150px 20px;
+    @include tablet{
+        padding: 50px 20px;
+    }
+}
