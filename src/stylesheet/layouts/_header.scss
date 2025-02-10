@@ -66,23 +66,6 @@
         }
     }
 
-    &__content h2 {
-        font-size: pxToRem(56);
-        font-weight: 900;
-        line-height: 60px;
-        margin-bottom: 27px;
-
-        @include tablet {
-            font-size: pxToRem(42);
-            line-height: normal;
-            margin-top: 10px;
-        }
-
-        @include mobile {
-            font-size: pxToRem(34);
-        }
-    }
-
     &__content p {
         max-width: 580px;
         font-size: pxToRem(18);
@@ -115,6 +98,15 @@
 
         @include mobile {
             display: none;
+        }
+
+        .link-main {
+            transition-duration: 0.1s;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: $primary-color;
+            }
         }
     }
 
