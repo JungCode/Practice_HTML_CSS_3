@@ -19,6 +19,10 @@
     font-size: pxToRem(48);
     font-weight: 900;
     line-height: normal;
+    margin-bottom: 10px;
+    &--center{
+        text-align: center;
+    }
     @include tablet{
         font-size: pxToRem(38);
     }

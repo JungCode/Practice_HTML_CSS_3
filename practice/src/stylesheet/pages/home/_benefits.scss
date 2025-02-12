@@ -1,19 +1,89 @@
 @use "../../abstracts/" as *;
 
-.benefits-container {
-    text-align: center;
-}
 
-.stories-card {
+
+.primary-card {
     &__container {
-        @include flex($justify: center, $gap: 20px, $wrap: wrap);
-        // font-size: pxToRem(22);
+        margin: 80px 0px;
+        @include flex($gap: 20px, $justify: center, $align: center, $wrap: wrap);
     }
 
     &__item {
-        padding: 30px;
-        background-color: white;
+        padding: 20px;
         border-radius: 10px;
-        box-shadow: 0px 0px 10px 0px rgba(156, 160, 172, 0.40);
+        background-color: $neutral-background-color;
+        width: 420px;
+        max-width: 420px;
+        line-height: pxToRem(22);
+    }
+
+    &__header {
+        font-size: pxToRem(32);
+        font-weight: 900;
+        margin-bottom: 30px;
+
+        @include tablet {
+            font-size: pxToRem(30);
+        }
+
+        @include mobile {
+            font-size: pxToRem(28);
+        }
+    }
+
+    &__title {
+        font-size: pxToRem(24);
+        font-weight: 900;
+        margin-bottom: 10px;
+        @include flex($gap: 15px, $align:center);
+
+        @include tablet {
+            font-size: pxToRem(22);
+        }
+
+        @include mobile {
+            font-size: pxToRem(20);
+        }
+    }
+
+    &__desc {
+        font-size: pxToRem(18);
+
+        @include tablet {
+            font-size: pxToRem(14);
+        }
+
+        @include mobile {
+            font-size: pxToRem(14);
+        }
+    }
+}
+
+.proof-comment {
+    &__container {
+        @include flex($gap: 20px, $direction: column, $align: center, $justify: center);
+    }
+
+    &__desc {
+        max-width: 500px;
+        text-align: center;
+        line-height: pxToRem(22);
+        font-size: pxToRem(18);
+
+        @include tablet {
+            font-size: pxToRem(16);
+        }
+
+        @include mobile {
+            font-size: pxToRem(14);
+        }
+    }
+
+    &__footer {
+        @include flex($align: center, $gap: 10);
+    }
+
+    &__author {
+        font-size: pxToRem(18);
     }
 }
