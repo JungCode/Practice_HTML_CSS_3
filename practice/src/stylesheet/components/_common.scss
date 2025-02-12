@@ -6,3 +6,16 @@
         padding: 50px 20px;
     }
 }
+.section-container-secondary{
+    background-color: $neutral-background-color;
+    padding: 100px 20px 150px 20px;
+    @include tablet{
+        padding: 50px 20px;
+    }
+}
+.section-container-third{
+    padding: 80px 20px;
+    @include tablet{
+        padding: 35px 20px;
+    }
+}

@@ -1,1 +1,37 @@
-benefits
+<section class="section-container-secondary">
+    <div class="benefits-container">
+        <h3 class="title-secondary">Let your story live <span class="hightlight-bg">more than 24h.</span></h3>
+        <p class="description">You've worked hard to create a beautiful Instagram story but it disappears in 24
+            hours?
+            <br>
+            No worries, use our story saver for Instagram to bring them to life on your website.
+        </p>
+        <ul class="stories-card__container">
+            <include src="./components/stories-card.html" locals='{
+                "cardImage": "../assets/images/logo-instagram.png",
+                "cardTitle": "Auto-Sync",
+                "cardDesc": "Instagram Stories"
+              }'></include>
+            <include src="./components/stories-card.html" locals='{
+                "cardImage": "../assets/images/logo-facebook.png",
+                "cardTitle": "Upload",
+                "cardDesc": "Facebook Stories"
+              }'></include>
+            <include src="./components/stories-card.html" locals='{
+                "cardImage": "../assets/images/logo-tiktok.png",
+                "cardTitle": "Sync",
+                "cardDesc": "Tiktok Stories"
+              }'></include>
+            <include src="./components/stories-card.html" locals='{
+                "cardImage": "../assets/images/logo-twitter.png",
+                "cardTitle": "Upload",
+                "cardDesc": "Twitter Fleets"
+              }'></include>
+            <include src="./components/stories-card.html" locals='{
+                "cardImage": "../assets/images/logo-linkedin.png",
+                "cardTitle": "Sync",
+                "cardDesc": "LinkedIn Stories"
+              }'></include>
+        </ul>
+    </div>
+</section>
