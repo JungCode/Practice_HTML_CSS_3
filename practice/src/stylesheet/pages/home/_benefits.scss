@@ -24,9 +24,11 @@
 
         @include tablet {
             font-size: pxToRem(30);
+            margin-bottom: 26px;
         }
 
         @include mobile {
+            margin-bottom: 22px;
             font-size: pxToRem(28);
         }
     }
@@ -35,14 +37,17 @@
         font-size: pxToRem(24);
         font-weight: 900;
         margin-bottom: 10px;
-        @include flex($gap: 15px, $align:center);
+        @include flex($gap: 15px, $align: center);
 
         @include tablet {
             font-size: pxToRem(22);
+            margin-bottom: 8px;
         }
 
         @include mobile {
+            gap:5px;
             font-size: pxToRem(20);
+            margin-bottom: 6px;
         }
     }
 
