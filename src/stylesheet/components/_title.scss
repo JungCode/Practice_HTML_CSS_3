@@ -1,19 +1,9 @@
 @use "../abstracts/" as *;
 
-.text-uppercase {
-    text-transform: uppercase;
-}
-
-.hightlight-bg {
-    background-color: $yellow-background-color;
-}
-
 .title-primary {
     font-size: pxToRem(56);
     font-weight: 900;
     line-height: 60px;
-    margin-bottom: 27px;
-
     @include tablet {
         font-size: pxToRem(42);
         line-height: normal;

@@ -1,0 +1,19 @@
+@use "../../abstracts/" as *;
+
+.benefits-container {
+    text-align: center;
+}
+
+.stories-card {
+    &__container {
+        @include flex($justify: center, $gap: 20px, $wrap: wrap);
+        // font-size: pxToRem(22);
+    }
+
+    &__item {
+        padding: 30px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(156, 160, 172, 0.40);
+    }
+}
