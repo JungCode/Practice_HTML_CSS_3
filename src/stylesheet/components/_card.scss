@@ -11,6 +11,7 @@
         background-color: white;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 0px rgba(156, 160, 172, 0.40);
+        @include flex($direction: column, $align:center);
     }
 
     &__text {
@@ -18,10 +19,7 @@
         font-size: pxToRem(22);
         min-width: 200px;
         line-height: pxToRem(25);
-
-        &--title {
-            font-weight: 700;
-        }
+        text-align: center;
 
         @include tablet {
             font-size: pxToRem(20);

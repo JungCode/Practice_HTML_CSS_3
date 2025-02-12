@@ -1,39 +1,47 @@
 @use "../../abstracts/" as *;
 
-.about-container {
-    @include flex($direction: row, $justify: center, $gap: 35px);
+.about {
+    &__container {
+        @include flex($direction: row, $justify: center, $gap: 35px);
 
-    @include tablet {
-        align-items: center;
-    }
+        @include tablet {
+            align-items: center;
+        }
 
-    @include mobile {
-        flex-direction: column;
-    }
+        @include mobile {
+            flex-direction: column;
+        }
 
-    .preview-widget-img {
-        width: 100%;
-    }
+        .preview-widget-img {
+            width: 100%;
+        }
 
-    .about__aside {
-        padding: 15px 0px;
-        max-width: 350px;
-        @include flex($direction: column, $gap: 30px);
-        order: 2;
+        .about__aside {
+            padding: 15px 0px;
+            max-width: 350px;
+            @include flex($direction: column, $gap: 30px);
+            order: 2;
 
-    }
+        }
 
-    .about__img {
-        @include mobile{
-            order:3
+        .about__img {
+            @include mobile {
+                order: 3
+            }
         }
     }
 
-    .frame-selection-container {
+    &__title {
+        min-width: 255px;
+    }
+}
+
+.frame-selection {
+    &__container {
         display: grid;
     }
 
-    .frame-selection__button {
+    &__button {
         padding: 15px;
         @include flex($direction: row, $align: center, $gap: 15px);
         color: $text-muted;
@@ -47,12 +55,11 @@
 
         @include tablet {
             padding: 10px;
+            font-size: pxToRem(18);
         }
 
-        @include mobile {}
+        @include mobile {
+            font-size: pxToRem(16);
+        }
     }
-}
-
-.about__title {
-    min-width: 255px;
 }

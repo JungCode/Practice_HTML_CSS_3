@@ -10,8 +10,12 @@
 
 .description {
     font-size: pxToRem(18);
+    line-height: pxToRem(22);
     margin-bottom: 50px;
     margin-top: 20px;
+    &--center{
+        text-align: center;
+    }
     @include tablet {
         font-size: pxToRem(16);
         margin-bottom: 36px;
