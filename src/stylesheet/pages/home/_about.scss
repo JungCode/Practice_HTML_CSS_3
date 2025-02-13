@@ -47,10 +47,16 @@
         color: $text-muted;
         border-radius: 5px;
         font-size: pxToRem(20);
+        cursor: pointer;
+        transition-duration: 0.2s;
 
         &--activate {
             color: $secondary-color;
             background: #F4F6FA;
+        }
+
+        &:hover {
+            background-color: #F4F6FA;
         }
 
         @include tablet {

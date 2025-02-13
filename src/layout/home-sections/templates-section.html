@@ -1,0 +1,49 @@
+<section class="section-container-third section-container-third section-container-third--dark">
+    <div class="templates__container">
+        <div class="templates__header">
+            <h4 class="title-secondary title-secondary--center title-secondary--white">Get started with one of our
+                templates</h4>
+            <p class="description description--white description--center">Start with one of our pre-designed templates.
+                Create, personalize
+                and embed the
+                perfect widget for any page
+                or campaign in just minutes.</p>
+        </div>
+        <button class="primary-btn primary-btn--secondary">See templates demos
+            <img src="../assets/icons/ic-arrow-right.svg" alt="arrow right">
+        </button>
+        <ul class="slider__container">
+            <include src="./components/slider-item.html" locals='{
+                "sliderImg": "../assets/images/slider-1.png",
+                "sliderTitle": "Popover",
+                "sliderDesc": "Showcases on every page that gives the feel of a living & breathing website."
+            }'></include>
+            <include src="./components/slider-item.html" locals='{
+                "sliderImg": "../assets/images/slider-2.png",
+                "sliderTitle": "Highlights",
+                "sliderDesc": "Mimics the same functionality of the Instagram Highlights on your website."
+            }'></include>
+            <include src="./components/slider-item.html" locals='{
+                "sliderImg": "../assets/images/slider-3.png",
+                "sliderTitle": "Slider",
+                "sliderDesc": "Display your stories in a full slideshow layout that catches your visitors’ attention."
+            }'></include>
+            <include src="./components/slider-item.html" locals='{
+                "sliderImg": "../assets/images/slider-4.png",
+                "sliderTitle": "Gallery",
+                "sliderDesc": "One widget with multiple stories and embed them as a full story gallery on your website. "
+            }'></include>
+            <div class="slider__pagination">
+                <button>
+                    <img src="../assets/icons/ic-filled-circle.svg" alt="fill circle icon">
+                </button>
+                <button>
+                    <img src="../assets/icons/ic-circle.svg" alt="fill circle icon">
+                </button>
+                <button>
+                    <img src="../assets/icons/ic-circle.svg" alt="fill circle icon">
+                </button>
+            </div>
+        </ul>
+    </div>
+</section>
