@@ -1,8 +1,19 @@
 {
-    plugins:{
-        "posthtml-include":{
-            "root":"./src"
+    plugins: {
+        "posthtml-include": {
+            "root": "./src"
         },
-        "posthtml-doctype":{"doctype":"HTML 5"}
+        "posthtml-doctype": { "doctype": "HTML 5" },
+        "posthtml-expressions": {
+            locals: {
+                frameSelections: [
+                    { text: "Highlights", src: "../assets/icons/ic-frame-1.svg", activateClass: "" },
+                    { text: "Popover", src: "../assets/icons/ic-frame-2.svg", activateClass: "" },
+                    { text: "Inline slideshows", src: "../assets/icons/ic-frame-3.svg", activateClass: "" },
+                    { text: "Story list gallery", src: "../assets/icons/ic-frame-4.svg", activateClass: "" },
+                    { text: "Carousel gallery", src: "../assets/icons/ic-frame-5.svg", activateClass: "frame-selection__button--activate" },
+                ]
+            }
+        }
     }
 }
