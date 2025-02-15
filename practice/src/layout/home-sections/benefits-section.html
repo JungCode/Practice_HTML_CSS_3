@@ -2,37 +2,20 @@
   <div class="benefits__container">
     <h3 class="title-secondary title-secondary--center">Let your story live<span class="hightlight-bg"> more than
         24h.</span></h3>
-    <p class="description description--center">You've worked hard to create a beautiful Instagram story but it disappears in 24
+    <p class="description description--center description--top-space description--bottom-space">You've worked hard to
+      create a beautiful Instagram story but it disappears in 24
       hours?
       <br>
       No worries, use our story saver for Instagram to bring them to life on your website.
     </p>
     <ul class="stories-card__container">
-      <include src="./components/stories-card.html" locals='{
-                "cardImage": "../assets/images/logo-instagram.png",
-                "cardTitle": "Auto-Sync",
-                "cardDesc": "Instagram Stories"
-              }'></include>
-      <include src="./components/stories-card.html" locals='{
-                "cardImage": "../assets/images/logo-facebook.png",
-                "cardTitle": "Upload",
-                "cardDesc": "Facebook Stories"
-              }'></include>
-      <include src="./components/stories-card.html" locals='{
-                "cardImage": "../assets/images/logo-tiktok.png",
-                "cardTitle": "Sync",
-                "cardDesc": "Tiktok Stories"
-              }'></include>
-      <include src="./components/stories-card.html" locals='{
-                "cardImage": "../assets/images/logo-twitter.png",
-                "cardTitle": "Upload",
-                "cardDesc": "Twitter Fleets"
-              }'></include>
-      <include src="./components/stories-card.html" locals='{
-                "cardImage": "../assets/images/logo-linkedin.png",
-                "cardTitle": "Sync",
-                "cardDesc": "LinkedIn Stories"
-              }'></include>
+      <each loop="item in socialBenefits">
+        <include src="./components/stories-card.html" locals='{
+          "cardImage": "{{item.src}}",
+          "cardTitle": "{{item.title}}",
+          "cardDesc": "{{item.desc}}"
+        }'></include>
+      </each>
     </ul>
   </div>
 </section>
@@ -41,32 +24,26 @@
     <h3 class="title-secondary title-secondary--center">Double your<span class="hightlight-bg"> conversions.</span></h3>
     <h3 class="title-secondary title-secondary--center">Double your<span class="hightlight-bg"> growth.</span></h3>
     <ul class="primary-card__container">
-      <include src="./components/primary-card.html" locals='{
-        "cardHeader":"Brands",
-        "cardIcon": "../assets/icons/ic-stock.svg",
-        "cardTitle": "Icreases conversions",
-        "cardDesc": "Enhance the visual showcase of your products with unique content making visitors convert to buyers."
-      }'></include>
-      <include src="./components/primary-card.html" locals='{
-        "cardHeader":"Marketers",
-        "cardIcon": "../assets/icons/ic-clock.svg",
-        "cardTitle": "Save time",
-        "cardDesc": "No more re-purposing, re-cropping or re-uploading the same content from your Instagram stories to your website."
-      }'></include>
-      <include src="./components/primary-card.html" locals='{
-        "cardHeader":"Web designers",
-        "cardIcon": "../assets/icons/ic-instagram-black.svg",
-        "cardTitle": "Fresh content",
-        "cardDesc": "Every story you post on Instagram, it is automatically saved in your account. Auto updates you unique content."
-      }'></include>
+      <each loop="item in businessBenefits">
+        <include src="./components/primary-card.html" locals='{
+          "cardHeader":"{{item.header}}",
+          "cardIcon": "{{item.icon}}",
+          "cardTitle": "{{item.title}}",
+          "cardDesc": "{{item.desc}}"
+        }'></include>
+      </each>
     </ul>
     <div class="proof-comment__container">
-      <img class="proof-comment__title" src="../assets/images/logo-clovin.png" alt="">
+      <figure>
+        <img class="proof-comment__title" src="../assets/images/logo-clovin.png" alt="clovin logo">
+      </figure>
       <p class="proof-comment__desc">“Storytelling on another level. EmbedStories is great - it takes pride of place on
         our homepage aggregating
         stories from our Instagram account. I highly recommend this product. ”.</p>
       <div class="proof-comment__footer">
-        <img class="proof-comment__avatar" src="../assets/images/avatar-1.png" alt="">
+        <figure>
+          <img class="proof-comment__avatar" src="../assets/images/avatar-1.png" alt="user avatar">
+        </figure>
         <p class="proof-comment__author"><strong>Ben Calahen,</strong> COO at Clovin</p>
       </div>
     </div>

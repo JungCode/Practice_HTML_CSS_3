@@ -23,6 +23,9 @@
     &--center{
         text-align: center;
     }
+    &--white{
+        color: white;
+    }
     @include tablet{
         font-size: pxToRem(38);
     }
