@@ -1,0 +1,92 @@
+@use "../../abstracts/" as *;
+
+.first-feature {
+    &__container {
+        @include flex($direction: column, $align: center, $gap: 150px);
+    }
+
+    &__content {
+        @include flex($direction: column, $gap: 50px, $align: center);
+
+        @include tablet {
+            gap: 37px;
+        }
+
+        @include mobile {
+            gap: 20px;
+        }
+    }
+
+    &__header {
+        @include flex($direction: column, $gap: 30px, $align: center);
+
+        button {
+            background-color: #E8F4FC;
+            color: $secondary-color;
+            border-radius: 3px;
+            padding: 10px 8px;
+            @include flex($align: center, $gap: 10px);
+            border: none;
+        }
+    }
+
+    &__hero-img {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &-label {
+        &__container {
+            @include flex($gap: 10px, $align: center, $justify: center, $wrap: wrap);
+        }
+
+        &__item {
+            height: 50px;
+            padding: 0px 10px;
+            @include flex ($gap: 5px, $align: center);
+            background-color: $neutral-background-color;
+            border-radius: 3px;
+        }
+    }
+
+    &-list {
+        &__container {
+            @include flex($gap: 40px);
+        }
+
+        &__item {
+            font-size: 18px;
+        }
+    }
+
+    &-preview {
+        width: 100%;
+        position: relative;
+
+        &__container {}
+    }
+}
+
+.label {
+    font-size: pxToRem(14);
+    font-weight: 500;
+    line-height: normal;
+
+    @include mobile {
+        font-size: pxToRem(12);
+    }
+}
+
+.filter {
+    position: absolute;
+    width: 95.25%;
+    height: 92.4%;
+    border-radius: 10px;
+    background-color: aqua;
+    top: 3.5%;
+    right: 2.3%;
+    background: rgba(0, 0, 0, 0.60);
+}

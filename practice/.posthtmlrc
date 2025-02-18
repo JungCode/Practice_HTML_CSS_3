@@ -24,7 +24,15 @@
                             { header: "Brands", icon: "../assets/icons/ic-stock-black.svg", title: "Icreases conversions", desc: "Enhance the visual showcase of your products with unique content making visitors convert to buyers." },
                             { header: "Marketers", icon: "../assets/icons/ic-clock.svg", title: "Save time", desc: "No more re-purposing, re-cropping or re-uploading the same content from your Instagram stories to your website." },
                             { header: "Web designers", icon: "../assets/icons/ic-instagram-black.svg", title: "Fresh content", desc: "Every story you post on Instagram, it is automatically saved in your account. Auto updates you unique content." },
-                        ]
+                        ],
+                            featureLabel: [
+                                { text: "Stories from specific date", icon: "../assets/icons/ic-schedule.svg"},
+                                { text: "Customize color", icon: "../assets/icons/ic-fill-black.svg"},
+                                { text: "Follow button", icon: "../assets/icons/ic-instagram-black.svg"},
+                                { text: "Multiple layouts", icon: "../assets/icons/ic-frame-black.svg"},
+                                { text: "Advance moderation", icon: "../assets/icons/ic-setting-black.svg"},
+                                { text: "Custom CSS", icon: "../assets/icons/ic-tag-black.svg"},
+                            ]
             }
         }
     }

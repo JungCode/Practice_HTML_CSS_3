@@ -1,1 +1,63 @@
-first feature
+<section class="section-container">
+    <div class="first-feature__container">
+        <div class="first-feature__content">
+            <div class="first-feature__header">
+                <button class="label">
+                    <img src="../assets/icons/ic-fill.svg" alt="icon">
+                    Customization
+                </button>
+                <h3 class="title-secondary title-secondary--center">Be on brand. Customize in minutes</h3>
+                <p class="description description--center">EmbedStories gives you flexibility in managing the display
+                    and looks of the
+                    Instagram Stories on your
+                    website. </p>
+            </div>
+            <ul class="first-feature-label__container">
+                <each loop="item in featureLabel">
+                    <li class="first-feature-label__item label">
+                        <img src="{{item.icon}}" alt="icon">
+                        {{item.text}}
+                    </li>
+                </each>
+            </ul>
+            <figure class="first-feature__hero-img">
+                <img src="../assets/images/img-preview-story-widget-1.png" alt="preview story widget">
+            </figure>
+        </div>
+        <div class="first-feature__content">
+            <div class="first-feature__header">
+                <button class="label">
+                    <img src="../assets/icons/ic-fill.svg" alt="icon">
+                    Installation
+                </button>
+                <h3 class="title-secondary title-secondary--center">Embed it and forget it</h3>
+                <ul class="first-feature-list__container">
+                    <li class="first-feature-list__item">
+                        <img src="../assets/icons/ic-checkmark.svg" alt="icon">
+                        Simple instalation. No developers needed
+                    </li>
+                    <li>
+                        <img src="../assets/icons/ic-checkmark.svg" alt="icon">
+                        Embed on different CMS platforms
+                    </li>
+                    <li>
+                        <img src="../assets/icons/ic-checkmark.svg" alt="icon">
+                        Auto sync new stories
+                    </li>
+                </ul>
+            </div>
+            <div class="first-feature-preview">
+                <figure class="first-feature__hero-img">
+                    <img src="../assets/images/img-preview-story-widget-1.png" alt="preview story widget">
+                </figure>
+                <div class="filter">
+                    
+                </div>
+                <div class="first-feature-preview__container">
+
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </div>
+</section>
