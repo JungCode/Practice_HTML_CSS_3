@@ -2,8 +2,10 @@
     <div class="first-feature__container">
         <div class="first-feature__content">
             <div class="first-feature__header">
-                <button class="label">
-                    <img src="../assets/icons/ic-fill.svg" alt="icon">
+                <button class="label label--blue">
+                    <figure>
+                        <img src="../assets/icons/ic-fill.svg" alt="icon">
+                    </figure>
                     Customization
                 </button>
                 <h3 class="title-secondary title-secondary--center">Be on brand. Customize in minutes</h3>
@@ -15,7 +17,9 @@
             <ul class="first-feature-label__container">
                 <each loop="item in featureLabel">
                     <li class="first-feature-label__item label">
-                        <img src="{{item.icon}}" alt="icon">
+                        <figure>
+                            <img src="{{item.icon}}" alt="icon">
+                        </figure>
                         {{item.text}}
                     </li>
                 </each>
@@ -26,35 +30,64 @@
         </div>
         <div class="first-feature__content">
             <div class="first-feature__header">
-                <button class="label">
-                    <img src="../assets/icons/ic-fill.svg" alt="icon">
+                <button class="label label--blue">
+                    <figure>
+                        <img src="../assets/icons/ic-fill.svg" alt="icon">
+                    </figure>
                     Installation
                 </button>
                 <h3 class="title-secondary title-secondary--center">Embed it and forget it</h3>
                 <ul class="first-feature-list__container">
-                    <li class="first-feature-list__item">
-                        <img src="../assets/icons/ic-checkmark.svg" alt="icon">
-                        Simple instalation. No developers needed
-                    </li>
-                    <li>
-                        <img src="../assets/icons/ic-checkmark.svg" alt="icon">
-                        Embed on different CMS platforms
-                    </li>
-                    <li>
-                        <img src="../assets/icons/ic-checkmark.svg" alt="icon">
-                        Auto sync new stories
-                    </li>
+                    <each loop="item in featureBenefitsList">
+                        <li class="first-feature-list__item">
+                            <figure>
+                                <img src="{{item.src}}" alt="icon">
+                            </figure>
+                            {{item.text}}
+                        </li>
+                    </each>
                 </ul>
             </div>
             <div class="first-feature-preview">
                 <figure class="first-feature__hero-img">
-                    <img src="../assets/images/img-preview-story-widget-1.png" alt="preview story widget">
+                    <img class="first-feature__hero-img--hidden" src="../assets/images/img-preview-story-widget-1.png"
+                        alt="preview story widget">
                 </figure>
-                <div class="filter">
-                    
-                </div>
+                <div class="filter"></div>
                 <div class="first-feature-preview__container">
-
+                    <div class="first-feature-preview__header">
+                        <h4 class="first-feature-preview__title">Implementation instructions</h4>
+                        <figure class="first-feature-preview__img">
+                            <img src="../assets/images/img-thumbnail.png" alt="img-thumbnail">
+                        </figure>
+                    </div>
+                    <ul class="first-feature-preview__list">
+                        <each loop="item in featurePreviewsList">
+                            <li class="first-feature-preview__item {{item.activateClass}}">
+                                <if condition="item.src === ''">
+                                    <div class="fake-icon"></div>
+                                </if>
+                                <else>
+                                    <figure>
+                                        <img src="{{item.src}}" alt="icon">
+                                    </figure>
+                                </else>
+                                {{item.text}}
+                            </li>
+                        </each>
+                    </ul>
+                    <div class="first-feature-preview__content">
+                        <p class="first-feature-preview__desc">If you are not using any web builder, just add/paste the
+                            provided code in your
+                            website's &lt;body&gt; in the position where you want the reviews to appear
+                        </p>
+                        <textarea class="first-feature-preview__text-area" name="snippetCode" id="snippetCode">&lt;div class='embedsocial-stories' data-ref="248fa1114347b4ee5feaada90416c974c010d4f4"&gt;&lt;/div&gt;&lt;script&gt;(function(d, s, id){var js;if (d.getElementById(id)) {return;}js = d.createElement(s);js.id = id;js.src = "https://embedsocial.com/embedscript/st.js";d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "embedsocial-script"));&lt;/script&gt;
+                        </textarea>
+                        <button class="first-feature-preview__button">&lt;&gt; Copy Code</button>
+                    </div>
+                    <strong class="first-feature-preview__footer">
+                        Need Help? <span>Chat with us!</span>
+                    </strong>
                 </div>
             </div>
         </div>
