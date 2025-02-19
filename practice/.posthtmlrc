@@ -30,32 +30,35 @@
                                 { title: "Highlights", desc: "Mimics the same functionality of the Instagram Highlights on your website.", src: "../assets/images/slider-template-2.png" },
                                 { title: "Slider", desc: "Display your stories in a full slideshow layout that catches your visitors’ attention.", src: "../assets/images/slider-template-3.png" },
                                 { title: "Gallery", desc: "One widget with multiple stories and embed them as a full story gallery on your website.", src: "../assets/images/slider-template-4.png" },
-                                
+
                             ],
-                            featureLabel: [
-                                { text: "Stories from specific date", icon: "../assets/icons/ic-schedule.svg" },
-                                { text: "Customize color", icon: "../assets/icons/ic-fill-black.svg" },
-                                { text: "Follow button", icon: "../assets/icons/ic-instagram-black.svg" },
-                                { text: "Multiple layouts", icon: "../assets/icons/ic-frame-black.svg" },
-                                { text: "Advance moderation", icon: "../assets/icons/ic-setting-black.svg" },
-                                { text: "Custom CSS", icon: "../assets/icons/ic-tag-black.svg" },
-                            ],
-                                featureBenefitsList: [
-                                    { text: "Simple instalation. No developers needed", src: "../assets/icons/ic-checkmark.svg" },
-                                    { text: "Embed on different CMS platforms", src: "../assets/icons/ic-checkmark.svg" },
-                                    { text: "Auto sync new stories", src: "../assets/icons/ic-checkmark.svg" },
+                                featureLabel: [
+                                    { text: "Stories from specific date", icon: "../assets/icons/ic-schedule.svg" },
+                                    { text: "Customize color", icon: "../assets/icons/ic-fill-black.svg" },
+                                    { text: "Follow button", icon: "../assets/icons/ic-instagram-black.svg" },
+                                    { text: "Multiple layouts", icon: "../assets/icons/ic-frame-black.svg" },
+                                    { text: "Advance moderation", icon: "../assets/icons/ic-setting-black.svg" },
+                                    { text: "Custom CSS", icon: "../assets/icons/ic-tag-black.svg" },
                                 ],
-                                    featurePreviewsList: [
-                                        { text: "HTML", src: "../assets/icons/ic-programing-blue.svg", activateClass: "first-feature-preview__item--activate" },
-                                        { text: "Wordpress", src: "../assets/icons/ic-w-logo.svg", activateClass: "" },
-                                        { text: "Shopify", src: "../assets/icons/ic-shopping-bag.svg", activateClass: "" },
-                                        { text: "Other", src: "" },
+                                    featureBenefitsList: [
+                                        { text: "Simple instalation. No developers needed", src: "../assets/icons/ic-checkmark.svg" },
+                                        { text: "Embed on different CMS platforms", src: "../assets/icons/ic-checkmark.svg" },
+                                        { text: "Auto sync new stories", src: "../assets/icons/ic-checkmark.svg" },
                                     ],
-                                        ctaSlider: [
-                                            { index: "1", title: "New Recipes", date: "18", month: "Oct", buttonClass: "left" },
-                                            { index: "2", title: "Pumpkin Spice", date: "22", month: "Oct", buttonClass: "", src: "../assets/images/img-slider-avatar-1.png" },
-                                            { index: "3", title: "Avocado Time", date: "19", month: "Oct", buttonClass: "right", src: "../assets/images/img-slider-avatar-2.png" },
+                                        featurePreviewsList: [
+                                            { text: "HTML", src: "../assets/icons/ic-programing-blue.svg", activateClass: "first-feature-preview__item--activate" },
+                                            { text: "Wordpress", src: "../assets/icons/ic-w-logo.svg", activateClass: "" },
+                                            { text: "Shopify", src: "../assets/icons/ic-shopping-bag.svg", activateClass: "" },
+                                            { text: "Other", src: "" },
                                         ],
+                                            ctaSlider: [
+                                                { index: "1", title: "New Recipes", date: "18", month: "Oct", buttonClass: "left" },
+                                                { index: "2", title: "Pumpkin Spice", date: "22", month: "Oct", buttonClass: "", src: "../assets/images/img-slider-avatar-1.png" },
+                                                { index: "3", title: "Avocado Time", date: "19", month: "Oct", buttonClass: "right", src: "../assets/images/img-slider-avatar-2.png" },
+                                            ],
+                                                integrationList: [
+                                                    { "title": "Works with any website" }, { "title": "No coding required to embed" }
+                                                ],
             }
         }
     }
