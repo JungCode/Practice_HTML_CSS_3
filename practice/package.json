@@ -16,6 +16,7 @@
     "parcel": "^2.13.3",
     "posthtml": "^0.16.6",
     "posthtml-doctype": "^1.1.1",
+    "posthtml-expressions": "^1.11.4",
     "posthtml-include": "^2.0.1",
     "sass": "^1.84.0"
   }
