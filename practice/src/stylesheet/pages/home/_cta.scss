@@ -1,0 +1,32 @@
+@use "../../abstracts/" as *;
+
+.cta {
+    &__container {
+        @include flex($gap: 80px, $justify : center, $align: center);
+
+        @include tablet {
+            flex-direction: column;
+        }
+    }
+
+    &__header p {
+        max-width: 580px;
+    }
+
+}
+
+.middle-icon {
+    @include flex($align: center);
+}
+
+@include tablet {
+    .cta-slider__item:nth-child(n+3) {
+        display: none;
+    }
+}
+
+@include mobile {
+    .cta-slider__item:nth-child(n+2) {
+        display: none;
+    }
+}

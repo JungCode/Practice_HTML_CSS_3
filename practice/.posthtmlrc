@@ -39,11 +39,16 @@
                                     { text: "Auto sync new stories", src: "../assets/icons/ic-checkmark.svg" },
                                 ],
                                     featurePreviewsList: [
-                                        { text: "HTML", src: "../assets/icons/ic-programing-blue.svg", activateClass:"first-feature-preview__item--activate" },
-                                        { text: "Wordpress", src: "../assets/icons/ic-w-logo.svg", activateClass:"" },
-                                        { text: "Shopify", src: "../assets/icons/ic-shopping-bag.svg", activateClass:"" },
+                                        { text: "HTML", src: "../assets/icons/ic-programing-blue.svg", activateClass: "first-feature-preview__item--activate" },
+                                        { text: "Wordpress", src: "../assets/icons/ic-w-logo.svg", activateClass: "" },
+                                        { text: "Shopify", src: "../assets/icons/ic-shopping-bag.svg", activateClass: "" },
                                         { text: "Other", src: "" },
-                                    ]
+                                    ],
+                                        ctaSlider: [
+                                            { index: "1", title: "New Recipes", date: "18", month: "Oct", buttonClass: "left" },
+                                            { index: "2", title: "Pumpkin Spice", date: "22", month: "Oct", buttonClass: "", src: "../assets/images/img-slider-avatar-1.png" },
+                                            { index: "3", title: "Avocado Time", date: "19", month: "Oct", buttonClass: "right", src: "../assets/images/img-slider-avatar-2.png" },
+                                        ]
             }
         }
     }
