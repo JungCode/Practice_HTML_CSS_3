@@ -9,6 +9,7 @@
     font-size: 15px;
     border-radius: 5px 0px 0px 5px;
     max-width: 250px;
+
     &:focus {
         outline: none;
     }
@@ -26,6 +27,7 @@
     font-weight: 700;
     @include flex($gap: 10px);
     min-width: 138px;
+
     &:hover {
         background-color: $secondary-color-hover;
         border-color: $secondary-color-hover;
@@ -34,4 +36,25 @@
 
 .email-form {
     display: flex;
+}
+
+.email-form__container {
+    @include tablet{
+        @include flex($direction: column, $justify:center);
+    }
+}
+
+.features-list {
+    margin-top: 20px;
+    font-size: pxToRem(14);
+    font-weight: 400;
+    @include flex($gap: 9px, $align: center);
+    list-style-type: disc;
+    list-style-position: inside;
+    line-height: 1;
+
+    &__item:nth-child(1) {
+        padding-top: 1px;
+        list-style-type: none;
+    }
 }
