@@ -1,0 +1,46 @@
+@use "../abstracts/" as *;
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.hightlight-bg {
+    background-color: $yellow-background-color;
+}
+
+.description {
+    font-size: pxToRem(18);
+    line-height: pxToRem(22);
+
+    &--center {
+        text-align: center;
+    }
+
+    &--white {
+        color: white;
+    }
+
+    &--bottom-space {
+        margin-bottom: 50px;
+
+        @include tablet {
+            margin-bottom: 36px;
+        }
+
+        @include mobile {
+            margin-bottom: 28px;
+        }
+    }
+
+    &--top-space {
+        margin-top: 20px;
+    }
+
+    @include tablet {
+        font-size: pxToRem(16);
+    }
+
+    @include mobile {
+        font-size: pxToRem(16);
+    }
+}

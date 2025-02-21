@@ -1,0 +1,30 @@
+@use "../../abstracts/" as *;
+
+.proof-comment {
+    &__container {
+        @include flex($gap: 20px, $direction: column, $align: center, $justify: center);
+    }
+
+    &__desc {
+        max-width: 500px;
+        text-align: center;
+        line-height: pxToRem(22);
+        font-size: pxToRem(18);
+
+        @include tablet {
+            font-size: pxToRem(16);
+        }
+
+        @include mobile {
+            font-size: pxToRem(14);
+        }
+    }
+
+    &__footer {
+        @include flex($align: center, $gap: 10);
+    }
+
+    &__author {
+        font-size: pxToRem(18);
+    }
+}
