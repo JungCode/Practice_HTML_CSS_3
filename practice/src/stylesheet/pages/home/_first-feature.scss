@@ -1,0 +1,221 @@
+@use "../../abstracts/" as *;
+
+.first-feature {
+    &__container {
+        @include flex($direction: column, $align: center, $gap: 150px);
+    }
+
+    &__content {
+        @include flex($direction: column, $gap: 50px, $align: center);
+
+        @include tablet {
+            gap: 37px;
+        }
+
+        @include mobile {
+            gap: 20px;
+        }
+    }
+
+    &__header {
+        @include flex($direction: column, $gap: 30px, $align: center);
+    }
+
+    &__hero-img {
+        width: 100%;
+
+        &--hidden {
+            min-height: 730px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &-label {
+        &__container {
+            @include flex($gap: 10px, $align: center, $justify: center, $wrap: wrap);
+        }
+
+        &__item {
+            height: 50px;
+            padding: 0px 10px;
+            @include flex ($gap: 5px, $align: center);
+            background-color: $neutral-background-color;
+            border-radius: 3px;
+        }
+    }
+
+    &-list {
+        &__container {
+            @include flex($gap: 40px);
+
+            @include tablet {
+                gap: 20px;
+                flex-direction: column;
+            }
+        }
+
+        &__item {
+            @include flex($gap: 5px);
+            font-size: pxToRem(18);
+            line-height: normal;
+
+            @include tablet {
+                font-size: pxToRem(14);
+            }
+        }
+    }
+}
+
+.label {
+    font-size: pxToRem(14);
+    font-weight: 500;
+    line-height: normal;
+
+    &--blue {
+        background-color: $light-secondary-color;
+        color: $secondary-color;
+        border-radius: 3px;
+        padding: 10px 8px;
+        @include flex($align: center, $gap: 10px);
+        border: none;
+    }
+
+    @include mobile {
+        font-size: pxToRem(12);
+    }
+}
+
+.filter {
+    position: absolute;
+    width: 95.25%;
+    height: 92.4%;
+    border-radius: 10px;
+    background-color: aqua;
+    top: 3.5%;
+    right: 2.3%;
+    background: rgba(0, 0, 0, 0.60);
+}
+
+
+.first-feature-preview {
+    width: 100%;
+    position: relative;
+
+    &__container {
+        box-shadow: 0px 0px 31.605px 0px rgba(0, 0, 0, 0.20);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 335px;
+        max-width: 442px;
+        background-color: white;
+        border-radius: 6px;
+        overflow: hidden;
+        @include flex($direction: column, $align: center);
+    }
+
+    &__header {
+        @include flex($direction: column, $align: center);
+        padding-bottom: 22px;
+    }
+
+    &__title {
+        padding: 31px;
+        text-align: center;
+        font-weight: 700;
+        font-size: pxToRem(17);
+    }
+
+    &__img {
+        cursor: pointer;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__list {
+        width: 100%;
+        @include flex();
+    }
+
+    &__item {
+        @include flex($direction: column, $align: center);
+        background-color: $neutral-background-color;
+        font-size: pxToRem(12);
+        flex: 1 4;
+        padding: 13px 0px;
+        transition-duration: 0.1s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $background-color;
+        }
+
+        &--activate {
+            color: $secondary-color;
+            background-color: white;
+        }
+    }
+
+    &__content {
+        padding: 37px;
+        @include flex($direction: column, $align: center, $gap: 22px);
+    }
+
+    &__desc {
+        font-size: pxToRem(11);
+        line-height: 135.714%;
+    }
+
+    &__text-area {
+        width: 100%;
+        border-radius: 2.215px;
+        border: 0.738px solid #D6DAE4;
+        resize: none;
+        height: 96px;
+        color: $text-muted;
+    }
+
+    &__button {
+        border-radius: 2.215px;
+        padding: 10px 34px;
+        color: white;
+        background-color: $secondary-color;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $secondary-color-hover;
+        }
+    }
+
+    &__footer {
+        text-align: center;
+        padding: 15px;
+        background-color: $neutral-background-color;
+        width: 100%;
+        font-size: pxToRem(12);
+
+        span {
+            color: $secondary-color;
+        }
+    }
+}
+
+.fake-icon {
+    width: 23px;
+    height: 30.5px;
+}
+
+@media (max-width: 1126px) {
+
+    .filter,
+    .first-feature__hero-img--hidden {
+        visibility: hidden;
+    }
+}
