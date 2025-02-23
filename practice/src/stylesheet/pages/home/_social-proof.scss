@@ -1,0 +1,39 @@
+@use "../../abstracts/" as *;
+
+.social-proof-video {
+    &__container {
+        background-color: $dark-background-color;
+        border-radius: 15px;
+        padding: 24px;
+        @include flex($align: center, $gap: 120px);
+        @include tablet{
+            gap: 30px;
+            flex-direction: column;
+        }
+    }
+
+    &__desc {
+        line-height: pxToRem(28);
+    }
+
+    &__content {
+        max-width: 510px;
+        @include flex($direction: column, $justify: center, $gap: 20px);
+    }
+
+    &__aside {
+        cursor: pointer;
+        transition-duration: 0.2s;
+        width: 100%;
+        img{
+            width: 100%;
+        }
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+.social-proof-video-section{
+    @include flex($direction: column, $align: center);
+    padding: 0px 20px;
+}
