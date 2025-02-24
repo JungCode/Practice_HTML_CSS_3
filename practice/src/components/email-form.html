@@ -1,6 +1,19 @@
-<form action="" class="email-form">
-    <input class="email-input" type="email" placeholder="Enter your email...">
-    <button class="submit-btn" type="submit">Start Free Trial
-        <img src="../assets/icons/ic-arrow-right.svg" alt="arrow right">
-    </button>
-</form>
+<div class="email-form__container">
+    <form action="" class="email-form">
+        <input class="email-input" type="email" placeholder="Enter your email...">
+        <button class="submit-btn" type="submit">Start Free Trial
+            <figure>
+                <img src="../assets/icons/ic-arrow-right.svg" alt="arrow right">
+            </figure>
+        </button>
+    </form>
+    <ul class="features-list">
+        <each loop='item in [
+            {"title":"Free 7-day trial"},
+            {"title":"Easy setup"},
+            {"title":"Cancel any time"}
+        ]'>
+            <li class="features-list__item">{{item.title}}</li>
+        </each>
+    </ul>
+</div>
