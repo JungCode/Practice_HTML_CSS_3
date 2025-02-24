@@ -1,1 +1,43 @@
-template
+<section class="section-container-third section-container-third section-container-third--dark">
+    <div class="templates__container">
+        <div class="templates__header">
+            <h4 class="title-secondary title-secondary--center title-secondary--white">Get started with one of our
+                templates</h4>
+            <p class="description description--white description--center">Start with one of our pre-designed templates.
+                Create, personalize
+                and embed the
+                perfect widget for any page
+                or campaign in just minutes.</p>
+        </div>
+        <button class="primary-btn primary-btn--secondary">See templates demos
+            <figure>
+                <img src="../assets/icons/ic-arrow-right.svg" alt="arrow right">
+            </figure>
+        </button>
+        <ul class="slider__container">
+            <each loop="item in templates">
+                <include src="./components/slider-item.html" locals='{
+                    "sliderImg": "{{item.src}}",
+                    "sliderTitle": "{{item.title}}",
+                    "sliderDesc": "{{item.desc}}"
+                }'></include>
+            </each>
+            <div class="slider__pagination">
+                <each loop="item in [1,2,3]">
+                    <button>
+                        <if condition="item == 1">
+                            <figure>
+                                <img src="../assets/icons/ic-filled-circle.svg" alt="fill circle icon">
+                            </figure>
+                        </if>
+                        <else>
+                            <figure>
+                                <img src="../assets/icons/ic-circle.svg" alt="fill circle icon">u
+                            </figure>
+                        </else>
+                    </button>
+                </each>
+            </div>
+        </ul>
+    </div>
+</section>

@@ -25,6 +25,13 @@
                             { header: "Marketers", icon: "../assets/icons/ic-clock.svg", title: "Save time", desc: "No more re-purposing, re-cropping or re-uploading the same content from your Instagram stories to your website." },
                             { header: "Web designers", icon: "../assets/icons/ic-instagram-black.svg", title: "Fresh content", desc: "Every story you post on Instagram, it is automatically saved in your account. Auto updates you unique content." },
                         ],
+                            templates: [
+                                { title: "Popover", desc: "Showcases on every page that gives the feel of a living & breathing website.", src: "../assets/images/slider-template-1.png" },
+                                { title: "Highlights", desc: "Mimics the same functionality of the Instagram Highlights on your website.", src: "../assets/images/slider-template-2.png" },
+                                { title: "Slider", desc: "Display your stories in a full slideshow layout that catches your visitors’ attention.", src: "../assets/images/slider-template-3.png" },
+                                { title: "Gallery", desc: "One widget with multiple stories and embed them as a full story gallery on your website.", src: "../assets/images/slider-template-4.png" },
+                                
+                            ],
                             featureLabel: [
                                 { text: "Stories from specific date", icon: "../assets/icons/ic-schedule.svg" },
                                 { text: "Customize color", icon: "../assets/icons/ic-fill-black.svg" },
@@ -43,7 +50,7 @@
                                         { text: "Wordpress", src: "../assets/icons/ic-w-logo.svg", activateClass:"" },
                                         { text: "Shopify", src: "../assets/icons/ic-shopping-bag.svg", activateClass:"" },
                                         { text: "Other", src: "" },
-                                    ]
+                                    ],
             }
         }
     }
