@@ -1,0 +1,28 @@
+<if condition="item.NotAvailableIn == option.title">
+    <li class="pricing-bottom-desc__item pricing-bottom-desc__item--not-available">
+        <figure><img src="../assets/icons/ic-checkmark-gray.svg" alt="icon">
+        </figure>
+        <p class="description">{{item.text}}</p>
+    </li>
+</if>
+<elseif condition='item.NotAvailableIn == "FREE&PRO&PLUS"'>
+    <if condition='option.title != "PREMIUM"'>
+        <li class="pricing-bottom-desc__item pricing-bottom-desc__item--not-available">
+            <figure><img src="../assets/icons/ic-checkmark-gray.svg" alt="icon">
+            </figure>
+            <p class="description">{{item.text}}</p>
+        </li>
+    </if>
+    <else>
+        <li class="pricing-bottom-desc__item">
+            <figure><img src="../assets/icons/ic-checkmark.svg" alt="icon"></figure>
+            <p class="description">{{item.text}}</p>
+        </li>
+    </else>
+</elseif>
+<else>
+    <li class="pricing-bottom-desc__item">
+        <figure><img src="../assets/icons/ic-checkmark.svg" alt="icon"></figure>
+        <p class="description">{{item.text}}</p>
+    </li>
+</else>
