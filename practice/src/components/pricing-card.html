@@ -1,0 +1,19 @@
+<li class="pricing-bottom-item {{option.class}}">
+    <div class="pricing-bottom-activate-label">Most businesses start with PRO</div>
+    <div class="pricing-bottom-content">
+        <div class="pricing-bottom__header">
+            <h4 class="pricing-bottom__title">{{option.title}}</h4>
+            <p class="pricing-bottom__cost">${{option.cost}}/<span class="pricing-bottom__cost--mini">month</span></p>
+        </div>
+        <button class="pricing-bottom__submit primary-btn primary-btn--third">{{option.buttonName}}</button>
+        <ul class="pricing-bottom-desc__container">
+            <li class="pricing-bottom-desc__item pricing-bottom-desc__item--special">
+                <figure><img src="../assets/icons/ic-checkmark.svg" alt="icon"></figure>
+                <p class="description">{{option.text}}</p>
+            </li>
+            <each loop="item in pricingDescList">
+                <include src="./components/pricing-details.html"></include>
+            </each>
+        </ul>
+    </div>
+</li>
