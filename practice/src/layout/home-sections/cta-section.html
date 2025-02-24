@@ -1,1 +1,34 @@
-cta
+<section class="section-container-secondary">
+    <div class="cta__container">
+        <div class="cta__header">
+            <h3 class="title-secondary">Ready to dive in?<br>
+                Create your widget today.</h3>
+            <p class="description description--bottom-space description--top-space">Display Instagram Stories Widget on
+                your website, that auto-syncs, and updates each time you add a photo
+                in
+                your active story. </p>
+            <include src="./components/email-form.html"></include>
+        </div>
+        <div class="cta-slider">
+            <ul class="cta-slider__container">
+                <each loop="item in ctaSlider">
+                    <include src="./components/cta-slider.html"></include>
+                </each>
+                <figure class="cta-slider__button cta-slider__button--left">
+                    <img src="../assets/icons/ic-left-chervon.svg" alt="icon">
+                </figure>
+                <figure class="cta-slider__button cta-slider__button--right">
+                    <img src="../assets/icons/ic-right-chervon.svg" alt="icon">
+                </figure>
+            </ul>
+            <div class="cta-slider__copy-right">
+                <p>Widget powered</p>
+                <figure class="middle-icon">
+                    <img src="../assets/icons/ic-blue-logo.svg" alt="logo">
+                </figure>
+                <p>by</p>
+                <u>EmbedSocial</u>
+            </div>
+        </div>
+    </div>
+</section>
