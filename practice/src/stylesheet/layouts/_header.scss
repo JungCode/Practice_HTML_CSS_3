@@ -155,21 +155,6 @@
     }
 }
 
-.features-list {
-    margin-top: 20px;
-    font-size: pxToRem(14);
-    font-weight: 400;
-    @include flex($gap: 9px, $align: center);
-    list-style-type: disc;
-    list-style-position: inside;
-    line-height: 1;
-
-    &__item:nth-child(1) {
-        padding-top: 1px;
-        list-style-type: none;
-    }
-}
-
 .story {
     &-main {
         @include flex($direction: column, $gap: 15px);
