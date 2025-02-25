@@ -1,0 +1,33 @@
+@use "../abstracts/" as *;
+
+.label {
+    font-size: pxToRem(14);
+    font-weight: 500;
+    line-height: normal;
+
+    figure {
+        @include flex($align: center);
+    }
+
+    &--blue {
+        background-color: $light-secondary-color;
+        color: $secondary-color;
+        border-radius: 3px;
+        padding: 10px 8px;
+        @include flex($align: center, $gap: 10px);
+        border: none;
+    }
+
+    &--purple {
+        background-color: $purple-background-color;
+        color: $purple-text-color;
+        border-radius: 3px;
+        padding: 10px 8px;
+        @include flex($align: center, $gap: 10px);
+        border: none;
+    }
+
+    @include mobile {
+        font-size: pxToRem(12);
+    }
+}
