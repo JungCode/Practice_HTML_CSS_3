@@ -1,0 +1,27 @@
+<li class="cta-slider__item">
+    <figure class="cta-slider__background">
+        <img src="../assets/images/slider-feature-{{item.index}}.png" alt="slider item">
+    </figure>
+    <div class="cta-slider__header">
+        <if condition="item.title == 'New Recipes'">
+            <div class="cta-slider__avt">
+                <strong>New</strong>
+            </div>
+        </if>
+        <else>
+            <figure>
+                <img src="{{item.src}}" alt="avatar">
+            </figure>
+        </else>
+        <h4>{{item.title}}</h4>
+    </div>
+    <div class="cta-slider__footer">
+        <div class="cta-slider__time">
+            <strong class="cta-slider__date">{{item.date}}</strong>
+            <p class="cta-slider__month">{{item.month}}</p>
+        </div>
+        <figure>
+            <img src="../assets/images/img-slider.png" alt="icon">
+        </figure>
+    </div>
+</li>
