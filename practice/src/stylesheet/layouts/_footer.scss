@@ -1,0 +1,98 @@
+@use "../abstracts/" as *;
+
+.footer {
+    &-form__container {
+        @include flex ($direction: column, $align: center);
+
+        h3,
+        p {
+            max-width: 580px;
+            width: 100%;
+        }
+
+        .email-form__container {
+
+            max-width: 406px;
+            width: 100%;
+        }
+
+        .features-list {
+            justify-content: center;
+        }
+    }
+
+    &-info {
+        &__section {
+            background-color: $dark-background-color;
+            padding: 35px 10px 178px 10px;
+
+            @include tablet {
+                padding-bottom: 100px;
+            }
+        }
+
+        &__container {
+            color: $light-text-color;
+            @include flex($gap: 80px, $justify: center);
+
+            h4 {
+                font-weight: 700;
+                font-size: pxToRem(18);
+            }
+
+            li,
+            p {
+                font-size: pxToRem(16);
+                line-height: normal;
+            }
+
+            @include tablet {
+                flex-direction: column;
+                align-items: center;
+            }
+
+        }
+
+        &__header {
+            max-width: 360px;
+            width: 100%;
+            @include flex($direction: column, $gap: 30px);
+
+            @include tablet {
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        &__title {
+            @include flex($align: center, $gap: 5px);
+        }
+
+        &__list {
+            @include flex($gap: 100px);
+
+            @include tablet {
+                gap: 50px;
+            }
+
+            @include mobile {
+                flex-direction: column;
+            }
+        }
+
+        &-detail {
+            &__list {
+                margin-top: 18px;
+                @include flex($direction: column, $gap: 10px);
+
+                a {
+                    color: $light-text-color;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
