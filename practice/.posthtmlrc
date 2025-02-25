@@ -100,6 +100,10 @@
                                                 "work": "COO at Clovin",
                                                 "desc": "Storytelling on another level. EmbedStories is great - it takes pride of place on our homepage..."
                                             },
+                                        ctaSlider: [
+                                            { index: "1", title: "New Recipes", date: "18", month: "Oct", buttonClass: "left" },
+                                            { index: "2", title: "Pumpkin Spice", date: "22", month: "Oct", buttonClass: "", src: "../assets/images/img-slider-avatar-1.png" },
+                                            { index: "3", title: "Avocado Time", date: "19", month: "Oct", buttonClass: "right", src: "../assets/images/img-slider-avatar-2.png" },
                                         ],
             }
         }
