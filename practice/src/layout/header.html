@@ -1,29 +1,24 @@
 <header class="header-main">
     <div class="header-main__top">
         <a href="javascript:void(0)" class="header-main__logo">
-            <img src="../assets/icons/ic-logo.svg" alt="logo icon">
+            <figure>
+                <img src="../assets/icons/ic-logo.svg" alt="logo icon">
+            </figure>
             <h1>embedsocial</h1>
         </a>
         <nav class="menu">
             <ul class="menu__list">
-                <li>
-                    <a href="javascript:void(0)" class="menu__link menu__link--dropbutton link-main">
-                        Platform
-                        <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.94 0.5L4 3.59042L7.06 0.5L8 1.45142L4 5.5L0 1.45142L0.94 0.5Z"
-                                fill="currentColor" />
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" class="menu__link link-main">Widgets</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" class="menu__link link-main">Templates</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" class="menu__link link-main">Pricing</a>
-                </li>
+                <each loop='item in ["Platform", "Widgets", "Templates", "Pricing"]'>
+                    <li>
+                        <a href="javascript:void(0)" class="menu__link link-main">{{item}}
+                            <if condition='item == "Platform"'>
+                                <figure>
+                                    <img src="../assets/icons/ic-chevron-down.svg" alt="icon">
+                                </figure>
+                            </if>
+                        </a>
+                    </li>
+                </each>
             </ul>
         </nav>
         <ul class="menu__action">
@@ -34,7 +29,9 @@
                 <button class="primary-btn primary-btn--secondary">Start Free Trial</button>
             </li>
         </ul>
-        <img src="../assets/icons/ic-menu.svg" class="menu__icon" alt="menu icon">
+        <figure class="menu__icon">
+            <img src="../assets/icons/ic-menu.svg" alt="menu icon">
+        </figure>
     </div>
 
     <!-- Start of header-bottom -->
@@ -50,20 +47,24 @@
                     in your active story. </p>
                 <include src="./components/email-form.html"></include>
             </div>
-            <figure class="header-main__images">
+            <div class="header-main__images">
                 <!-- Story Header -->
-                <div class="story-main">
+                <figure class="story-main">
                     <div class="story-header">
-                        <img src="../assets/images/desktop/img-ig-header.png" />
+                        <figure>
+                            <img src="../assets/images/desktop/img-ig-header.png" />
+                        </figure>
                     </div>
                     <!-- Main Story -->
-                    <img class="story-picture story-picture--main" src="../assets/images/desktop/img-story-1.png" />
+                    <figure>
+                        <img class="story-picture story-picture--main" src="../assets/images/desktop/img-story-1.png" />
+                    </figure>
 
                     <!-- Instagram Icon -->
-                    <div class="instagram-icon-container">
+                    <figure class="instagram-icon-container">
                         <img src="../assets/icons/ic-instagram.svg" />
-                    </div>
-                </div>
+                    </figure>
+                </figure>
                 <!-- Small Stories -->
                 <div class="story-aside">
                     <picture>
@@ -79,29 +80,18 @@
                             src="../assets/images/desktop/img-story-3.png" />
                     </picture>
                 </div>
-            </figure>
+            </div>
         </div>
         <div class="brands">
             <p class="brands__title">JOIN 50,000+ WEBSITES THAT USE EMBEDSOCIAL TO SELL MORE</p>
             <ul class="brands__list">
-                <li class="brands__item">
-                    <img src="../assets/images/logo-cnn.png" alt="CNN" class="brands__logo">
-                </li>
-                <li class="brands__item">
-                    <img src="../assets/images/logo-netgeo.png" alt="National Geographic" class="brands__logo">
-                </li>
-                <li class="brands__item">
-                    <img src="../assets/images/logo-florence.png" alt="Florence by Mills" class="brands__logo">
-                </li>
-                <li class="brands__item">
-                    <img src="../assets/images/logo-ancestry.png" alt="Ancestry" class="brands__logo">
-                </li>
-                <li class="brands__item">
-                    <img src="../assets/images/logo-industrious.png" alt="Industrious" class="brands__logo">
-                </li>
-                <li class="brands__item">
-                    <img src="../assets/images/logo-nike.png" alt="Nike" class="brands__logo">
-                </li>
+                <each loop='item in ["cnn","netgeo", "florence", "ancestry", "industrious", "nike"]'>
+                    <li class="brands__item">
+                        <figure class="brands__logo">
+                            <img src="../assets/images/logo-{{item}}.png" alt="logo">
+                        </figure>
+                    </li>
+                </each>
             </ul>
         </div>
     </div>
