@@ -2,7 +2,7 @@
   "name": "Practice_HTML_CSS_3",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "target": "index.html",
   "scripts": {
     "dev": "parcel src/pages/index.html",
     "build": "parcel build src/pages/index.html",
