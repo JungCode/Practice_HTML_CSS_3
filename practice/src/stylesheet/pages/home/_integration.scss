@@ -1,0 +1,53 @@
+@use "../../abstracts/" as *;
+
+.integration {
+    &__container {
+        @include flex ($gap: 100px);
+
+        background-color: $neutral-background-color;
+        border-radius: 15px;
+        padding: 54px;
+
+        @include mobile {
+            flex-direction: column;
+            padding: 54px 20px;
+        }
+    }
+
+    &__header {
+        max-width: 535px;
+        @include flex($direction: column, $gap: 32px, $justify: center);
+
+        @include mobile {
+            text-align: center;
+        }
+    }
+
+    &__img {
+        @include flex($justify: center, $align: center);
+
+        img {
+            width: 100%;
+        }
+
+        max-width: 540px;
+    }
+
+    &__item {
+        font-size: pxToRem(18);
+        @include flex($gap: 10px, $justify: left, $align: center);
+
+        @include tablet {
+            font-size: pxToRem(16);
+        }
+
+        @include mobile {
+            justify-content: center;
+            font-size: pxToRem(14);
+        }
+    }
+
+    &__list {
+        @include flex($direction: column, $gap: 10px);
+    }
+}
