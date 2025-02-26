@@ -1,0 +1,30 @@
+<div class="integration__container">
+    <div class="integration__header">
+        <div>
+            <button class="label label--blue">
+                <figure>
+                    <img src="../assets/icons/ic-cube.svg" alt="icon">
+                </figure>
+                Integrations
+            </button>
+        </div>
+        <h3 class="title-secondary">Works with 99.9% of
+            web platforms</h3>
+        <p class="description">We integrate with tons of other apps, ecoomerce platforms or web builders.
+            Native apps are avaialble,
+            too. </p>
+        <ul class="integration__list">
+            <each loop='item in integrationList'>
+                <li class="integration__item">
+                    <figure>
+                        <img src="../assets/icons/ic-checkmark.svg" alt="icon">
+                    </figure>
+                    {{item.title}}
+                </li>
+            </each>
+        </ul>
+    </div>
+    <figure class="integration__img">
+        <img src="../assets/images/img-embedsocial.png" alt="integration image">
+    </figure>
+</div>
