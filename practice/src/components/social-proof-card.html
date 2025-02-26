@@ -1,0 +1,18 @@
+<li class="social-proof-reviews__item">
+    <article class="social-proof-reviews__main">
+        <figure>
+            <img src="../assets/images/avatar-{{item.index}}.png" alt="avatar">
+        </figure>
+        <p class="description"><strong>{{item.name}} </strong>{{item.work}}</p>
+        <figure class="social-proof-reviews-stars">
+            <each loop="star in [1,2,3,4,5]">
+                <img src="../assets/icons/ic-star.svg" alt="star icon">
+            </each>
+        </figure>
+        <p class="social-proof-reviews__desc">{{item.desc}}</p>
+    </article>
+    <figure class="social-proof-reviews__footer">
+        <img src="../assets/icons/ic-google.svg" alt="icon">
+        <p>2 weeks ago</p>
+    </figure>
+</li>

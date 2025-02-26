@@ -1,1 +1,22 @@
-reviews
+<section class="section-container">
+    <div class="social-proof-reviews__container">
+        <div class="social-proof-reviews__header">
+            <h3 class="title-secondary title-secondary--center">Our customers love EmbedStories</h3>
+            <p class="description description--center description--bottom-space description--top-space"> <strong>Rated
+                    4.8</strong> by our customers on Facebook and Google</p>
+        </div>
+        <ul class="social-proof-reviews__list">
+            <each loop='item in reviews'>
+                <include src="./components/social-proof-card.html"></include>
+            </each>
+        </ul>
+        <div class="social-proof-reviews__copy-right">
+            <p>Widget powered</p>
+            <figure class="middle-icon">
+                <img src="../assets/icons/ic-blue-logo.svg" alt="logo">
+            </figure>
+            <p>by</p>
+            <u>EmbedSocial</u>
+        </div>
+    </div>
+</section>
