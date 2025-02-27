@@ -45,6 +45,104 @@
                                         { text: "Embed on different CMS platforms", src: "../assets/icons/ic-checkmark.svg" },
                                         { text: "Auto sync new stories", src: "../assets/icons/ic-checkmark.svg" },
                                     ],
+                                        secondFeatureIntroduction: [
+                                            {
+                                                "img": "1",
+                                                "icon": "ic-cart",
+                                                "labelText": "Shoppable Story",
+                                                "title": "Make your Instagram Stories, Shoppable",
+                                                "igLogo": "false",
+                                                "list": [
+                                                    {
+                                                        "text": "Use the Call to Acton feature and add buy links to the Instagram stories",
+                                                        "class": ""
+                                                    },
+                                                    {
+                                                        "text": "Allow your web visitors to interact and directly buy the product showcased in the Instagram story.",
+                                                        "class": ""
+                                                    }
+                                                ],
+                                            },
+                                            {
+                                                "img": "2",
+                                                "icon": "ic-rocket",
+                                                "labelText": "Story Ads",
+                                                "title": "Boost your Instagram stories with few clicks",
+                                                "igLogo": "true",
+                                                "list": [
+                                                    {
+                                                        "text": "Create Instagram Story Ads in just a few clicks",
+                                                        "class": ""
+                                                    },
+                                                    {
+                                                        "text": "Archive Instagram Stories with EmbesStories and re-use them for Instagram Ads.",
+                                                        "class": ""
+                                                    },
+                                                    {
+                                                        "text": "This is an option that is not available in the Facebook Ads Manager.",
+                                                        "class": "second-feature-content__bold"
+                                                    }
+                                                ],
+                                            },
+                                            {
+                                                "img": "2",
+                                                "icon": "ic-stock-purple",
+                                                "labelText": "Reports and Anayitics",
+                                                "title": "Create. Analyze. Grow.",
+                                                "igLogo": "false",
+                                                "list": [
+                                                    {
+                                                        "text": "Analyze conversions, clicks, views",
+                                                        "class": ""
+                                                    },
+                                                    {
+                                                        "text": "Compare metrics between products",
+                                                        "class": ""
+                                                    },
+                                                    {
+                                                        "text": "See the direct effect.",
+                                                        "class": ""
+                                                    }
+                                                ],
+                                            },
+                                        ],
+                                            secondFeatureList: [{
+                                                "icon": "icon-sync", "title": "Auto sync", "desc"
+                                                    : "Sync all Instagram stories in a single click and create an widget that you can embed on any website."
+                                            },
+                                            {
+                                                "icon": "ic-mobile", "title": "Responsive", "desc"
+                                                    : "Mobile-friendly, fully responsive, fits on every display: tablet, mobile, or desktop."
+                                            }, {
+                                                "icon"
+                                                    : "ic-social-media", "title": "Follow button", "desc"
+                                                    : "Show a Follow button with a link to your Instagram account to help you drive traffic and increase followers. "
+                                            }, {
+                                                "icon": "ic-frame", "title": "Unlimited widgets", "desc"
+                                                    : "Create multiple widgets and embed feeds on various websites from multiple social media platforms."
+                                            },
+                                            {
+                                                "icon": "ic-earth", "title": "Localization", "desc"
+                                                    : "Use the 10+ languages available in the platform to localize the widget for your web visitors."
+                                            },
+                                            {
+                                                "icon": "ic-filter", "title": "Filters (PRO)", "desc"
+                                                    : "Know which Instagram story performs best and the total clicks of the entire widget on your website."
+                                            },
+                                            {
+                                                "icon": "ic-stock-blue", "title": "Analytics", "desc"
+                                                    : "Know which Instagram story performs best and the total clicks of the entire widget on your website."
+                                            },
+                                            {
+                                                "icon": "ic-tag", "title": "Custom CSS", "desc"
+                                                    : "Variety of settings, filters, and a Custom CSS editor to style your social media widget entirely. "
+                                            },
+                                            ],
+                                        ctaSlider: [
+                                            { index: "1", title: "New Recipes", date: "18", month: "Oct", buttonClass: "left" },
+                                            { index: "2", title: "Pumpkin Spice", date: "22", month: "Oct", buttonClass: "", src: "../assets/images/img-slider-avatar-1.png" },
+                                            { index: "3", title: "Avocado Time", date: "19", month: "Oct", buttonClass: "right", src: "../assets/images/img-slider-avatar-2.png" },
+                                        ],
                                         featurePreviewsList: [
                                             { text: "HTML", src: "../assets/icons/ic-programing-blue.svg", activateClass: "first-feature-preview__item--activate" },
                                             { text: "Wordpress", src: "../assets/icons/ic-w-logo.svg", activateClass: "" },
