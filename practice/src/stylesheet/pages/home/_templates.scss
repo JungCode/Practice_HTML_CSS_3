@@ -64,11 +64,12 @@
             padding: 0px;
         }
     }
+
+    figure {
+        @include flex($justify: center, $align: center);
+    }
 }
 
-figure {
-    @include flex($justify: center, $align: center);
-}
 
 @include tablet {
     .slider--item__container:nth-child(n+3) {
