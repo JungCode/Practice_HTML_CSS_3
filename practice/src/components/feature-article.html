@@ -1,0 +1,28 @@
+<div class="second-feature-content__container">
+    <figure class="second-feature-content__img">
+        <img src="../assets/images/img-feature-{{item.img}}.png" class="second-feature-content__img--inside" alt="image">
+        <if condition='{{item.igLogo == "true"}}'>
+            <img src="../assets/images/logo-ig.png" class="second-feature-content__deco" alt="Instagram logo">
+        </if>
+    </figure>
+    <article class="second-feature-content__aside">
+        <div class="second-feature-content__label">
+            <button class="label label--purple">
+                <figure><img src="../assets/icons/{{item.icon}}.svg" alt="icon"></figure>
+                {{item.labelText}}
+            </button>
+        </div>
+        <h4 class="second-feature-content__title title-secondary">{{item.title}}
+        </h4>
+        <ul class="second-feature-content__list">
+            <each loop="itemOfList in {{item.list}}">
+                <li class="second-feature-content__item description {{itemOfList.class}}">
+                    <figure>
+                        <img src="../assets/icons/ic-checkmark.svg" alt="checkmark">
+                    </figure>
+                    {{itemOfList.text}}
+                </li>
+            </each>
+        </ul>
+    </article>
+</div>

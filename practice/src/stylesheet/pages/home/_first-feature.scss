@@ -69,24 +69,6 @@
     }
 }
 
-.label {
-    font-size: pxToRem(14);
-    font-weight: 500;
-    line-height: normal;
-
-    &--blue {
-        background-color: $light-secondary-color;
-        color: $secondary-color;
-        border-radius: 3px;
-        padding: 10px 8px;
-        @include flex($align: center, $gap: 10px);
-        border: none;
-    }
-
-    @include mobile {
-        font-size: pxToRem(12);
-    }
-}
 
 .filter {
     position: absolute;
