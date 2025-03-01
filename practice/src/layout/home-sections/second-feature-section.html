@@ -1,22 +1,22 @@
 <section class="section-container">
     <div class="second-feature__container">
-        <h3 class="second-feature__title">
+        <h2 class="second-feature__title">
             More than just a widget.
             <br>
             A complete <mark>Stories Platform.</mark>
-        </h3>
+        </h2>
         <each loop='item in secondFeatureIntroduction'>
             <include src="./components/feature-article.html"></include>
         </each>
         <div class="second-feature-other">
-            <h4 class="title-secondary title-secondary--center">Other features at your service</h4>
+            <h3 class="title-secondary title-secondary--center">Other features at your service</h3>
             <ul class="second-feature-other__list">
                 <each loop=' item in secondFeatureList'>
                     <li class="second-feature-other__item">
                         <figure class="second-feature-other__img">
                             <img src="../assets/icons/{{item.icon}}.svg" alt="icon">
                         </figure>
-                        <h5 class="second-feature-other__title">{{item.title}}</h5>
+                        <h4 class="second-feature-other__title">{{item.title}}</h4>
                         <p class="description">{{item.desc}}</p>
                     </li>
                 </each>
