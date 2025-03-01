@@ -168,8 +168,56 @@
                                                                     { text: "Team Sub-Accounts", NotAvailableIn: "FREE&PRO&PLUS" },
                                                                     { text: "Advance Analytics", NotAvailableIn: "FREE&PRO&PLUS" }
                                                                 ],
-
-
+                                                            reviews: [
+                                                                {
+                                                                    "index": "3",
+                                                                    "name": "Terry Dias",
+                                                                    "work": "",
+                                                                    "desc": "I just signed up for a trial and within a couple of hours had a brand new customer testimonials page built on our website as well as sliders..."
+                                                                },
+                                                                {
+                                                                    "index": "4",
+                                                                    "name": "James Workman",
+                                                                    "work": "",
+                                                                    "desc": "Seriously impressed by Embed Social.Good job making the app so easy to use."
+                                                                },
+                                                                {
+                                                                    "index": "5",
+                                                                    "name": "Ahmad Vaccaro",
+                                                                    "work": "",
+                                                                    "desc": "Emebed Social and their services is just perfect ! It has made my business life so much easier ! 5 stars!"
+                                                                },
+                                                                {
+                                                                    "index": "6",
+                                                                    "name": "Allison Culhane",
+                                                                    "work": "",
+                                                                    "desc": "Awesome products, Superior human support."
+                                                                },
+                                                                {
+                                                                    "index": "7",
+                                                                    "name": "Davis Herwitz",
+                                                                    "work": "",
+                                                                    "desc": "I‘ve been on the look out for lots of companies to do what they do, and I‘ve never found any company who are so quick to get in touch and..."
+                                                                },
+                                                                {
+                                                                    "index": "8",
+                                                                    "name": "Jessie Grant",
+                                                                    "work": "",
+                                                                    "desc": "Very impressed. 5 stars!"
+                                                                },
+                                                                {
+                                                                    "index": "9",
+                                                                    "name": "John Smith",
+                                                                    "work": "",
+                                                                    "desc": "Our experience with EmbedStories is very good, very solid, loads fast, looks good."
+                                                                },
+                                                                {
+                                                                    "index": "1",
+                                                                    "name": "Ben Calahen,",
+                                                                    "work": "COO at Clovin",
+                                                                    "desc": "Storytelling on another level. EmbedStories is great - it takes pride of place on our homepage..."
+                                                                },
+                                                            ],
             }
         }
     }
