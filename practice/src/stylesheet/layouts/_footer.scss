@@ -22,6 +22,12 @@
     }
 
     &-info {
+        &__title {
+            figure {
+                @include flex();
+            }
+        }
+
         &__section {
             background-color: $dark-background-color;
             padding: 35px 10px 178px 10px;
