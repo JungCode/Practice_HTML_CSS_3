@@ -1,24 +1,44 @@
 @use "../abstracts/" as *;
 
-.section-container{
+.section-container {
     padding: 150px 20px;
-    @include tablet{
+
+    @include tablet {
         padding: 50px 20px;
     }
 }
-.section-container-secondary{
+
+.section-container-secondary {
     background-color: $neutral-background-color;
     padding: 100px 20px 150px 20px;
-    @include tablet{
+
+    @include tablet {
         padding: 50px 20px;
     }
 }
-.section-container-third{
+
+.section-container-third {
     padding: 80px 20px;
-    @include tablet{
+
+    @include tablet {
         padding: 35px 20px;
     }
-    &--dark{
+
+    &--dark {
         background-color: $dark-background-color;
+    }
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+
+    @include tablet {
+        max-width: 1200px;
+    }
+
+    @include mobile {
+        padding: 0 15px;
+        max-width: inherit;
     }
 }

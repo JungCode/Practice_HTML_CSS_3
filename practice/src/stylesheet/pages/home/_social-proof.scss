@@ -74,6 +74,9 @@
         @include flex($gap: 10px);
         font-size: pxToRem(12);
         color: $text-muted;
+        img{
+            width: auto;
+        }
     }
 
     &__copy-right {
