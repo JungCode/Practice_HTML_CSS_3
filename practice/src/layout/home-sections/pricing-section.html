@@ -1,1 +1,44 @@
-pricing
+<section class="section-container-secondary">
+    <div class="pricing__container">
+        <h2 class="title-secondary title-secondary--center">Try all EmbedStories features 7 days free.</h2>
+        <p class="description description--center description--bottom-space description--top-space">Reach more with your
+            Instagram stories.</p>
+        <div class="pricing__content">
+            <div class="pricing-top-options">
+                <button class="pricing-top__button pricing-top__button--active">Annualy, save 20%</button>
+                <button class="pricing-top__button">Monthly</button>
+            </div>
+            <ul class="pricing-bottom-options">
+                <each loop="option in pricingOptions">
+                    <include src="./components/pricing-card.html"></include>
+                </each>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="section-container-secondary">
+    <div class="question__container">
+        <div class="question__header">
+            <h2 class="title-secondary title-secondary--center">Frequently asked questions</h2>
+            <p class="description description--center description--bottom-space description--top-space">Have a specific
+                question? Check out our <a class="question__link" href="">Support Center</a></p>
+        </div>
+        <ul class="question__list">
+            <each loop="item in [1,2,3,4]">
+                <li class="question__item">
+                    <div class="question__botton">
+                        <strong>Question {{item}}</strong>
+                        <figure>
+                            <img src="../assets/icons/ic-angle-down.svg" alt="icon">
+                        </figure>
+                    </div>
+                    <if condition="item == 1">
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu suscipit euismod semper leo.
+                        </p>
+                    </if>
+                </li>
+            </each>
+        </ul>
+    </div>
+</section>

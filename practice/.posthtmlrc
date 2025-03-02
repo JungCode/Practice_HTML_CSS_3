@@ -152,6 +152,22 @@
                                                         integrationList: [
                                                             { "title": "Works with any website" }, { "title": "No coding required to embed" }
                                                         ],
+                                                            pricingOptions: [
+                                                                { title: "FREE", cost: "0", buttonName: "Start Using For Free", class: "", text: "1 Instagram Business Account" },
+                                                                { title: "PRO", cost: "29", buttonName: "Try Free For 7 Days", class: "pricing-bottom-item--activate", text: "1 Instagram Business Account" },
+                                                                { title: "PRO Plus", cost: "49", buttonName: "Try Free For 7 Days", class: "", text: "3 Instagram Business Account" },
+                                                                { title: "PREMIUM", cost: "99", buttonName: "Try Free For 7 Days", class: "", text: "10 Instagram Business Account" },
+                                                            ],
+                                                                pricingDescList: [
+                                                                    { text: "Auto Update", NotAvailableIn: "" },
+                                                                    { text: "Unlimited Story Widgets", NotAvailableIn: "FREE" },
+                                                                    { text: "Unlimited Galleries", NotAvailableIn: "FREE" },
+                                                                    { text: "Multiple Layouts & Options", NotAvailableIn: "FREE" },
+                                                                    { text: "Convert to AMP Format", NotAvailableIn: "FREE" },
+                                                                    { text: "API Access", NotAvailableIn: "FREE" },
+                                                                    { text: "Team Sub-Accounts", NotAvailableIn: "FREE&PRO&PLUS" },
+                                                                    { text: "Advance Analytics", NotAvailableIn: "FREE&PRO&PLUS" }
+                                                                ],
                                                             reviews: [
                                                                 {
                                                                     "index": "3",
