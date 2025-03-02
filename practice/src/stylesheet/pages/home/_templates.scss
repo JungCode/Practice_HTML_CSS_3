@@ -37,6 +37,13 @@
             max-width: 310px;
             overflow: hidden;
             min-height: 357px;
+            transition-duration: 0.2s;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(105%);
+                background-color: $primary-color;
+            }
         }
 
         &__content {
