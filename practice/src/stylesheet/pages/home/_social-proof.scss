@@ -71,9 +71,10 @@
     }
 
     &__footer {
-        @include flex($gap: 10px);
+        @include flex($gap: 10px, $align: center);
         font-size: pxToRem(12);
         color: $text-muted;
+
         img{
             width: 17px;
             height: 17px;
