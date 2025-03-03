@@ -75,14 +75,16 @@
         }
 
         &__list {
-            @include flex($gap: 100px);
+            @include flex($gap: 100px, $wrap: wrap, $justify: center);
 
             @include tablet {
                 gap: 50px;
             }
-
-            @include mobile {
-                flex-direction: column;
+        }
+        &__item{
+            @include tablet{
+                max-width: 179px;
+                width: 100%;
             }
         }
 

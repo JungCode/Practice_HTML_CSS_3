@@ -19,6 +19,7 @@
         @include flex($direction: column, $gap: 32px, $justify: center);
 
         @include mobile {
+            align-items: center;
             text-align: center;
         }
     }
@@ -42,12 +43,13 @@
         }
 
         @include mobile {
-            justify-content: center;
+            $justify: none;
             font-size: pxToRem(14);
         }
     }
 
     &__list {
         @include flex($direction: column, $gap: 10px);
+        width: fit-content;
     }
 }

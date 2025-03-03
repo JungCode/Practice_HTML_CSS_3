@@ -17,5 +17,8 @@ body {
     font-size: pxToRem(11);
     line-height: pxToRem(16);
   }
+  button{
+    font-family: $primary-font;
+  }
 }
 

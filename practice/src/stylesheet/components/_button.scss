@@ -73,6 +73,9 @@
         }
 
     }
+    figure{
+        @include flex($align: center);
+    }
 }
 
 @keyframes hover-primary {

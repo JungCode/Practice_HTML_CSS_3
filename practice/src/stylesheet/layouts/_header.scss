@@ -7,12 +7,16 @@
     @include flex($direction: column);
 
     &__top {
-        @include flex($justify: space-around);
+        @include flex($justify: space-around, $align: center);
         box-shadow: 0px 4px 4px rgba($color: #000000, $alpha: 0.25);
         padding: 10px 0px;
         z-index: 2;
 
         @include mobile {
+            top: 0;
+            background-color: $background-color;
+            width: 100%;
+            position: fixed;
             padding: 10px 10px;
             @include flex($justify: space-between);
         }
@@ -41,18 +45,34 @@
         padding: 50px 20px;
         @include flex($gap: 75px, $direction: column);
 
+        @include mobile {
+            margin-top: 30px;
+        }
+
         .brands {
             @include flex($justify: center, $align: center, $direction: column, $gap: 20px);
 
             &__list {
-                @include flex($gap: 46px, $wrap: wrap, $justify: center);
+                @include flex($gap: 46px, $justify: center);
+
+                @include tablet {
+                    gap: 30px;
+                }
+
+                @include mobile {
+                    gap: 10px
+                }
             }
 
             &__title {
                 text-align: center;
                 color: $text-muted;
                 font-weight: 500;
-                font-size: pxToRem(14);
+                font-size: pxToRem(18);
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                font-variant: all-small-caps;
             }
         }
     }
@@ -71,11 +91,8 @@
     }
 
     &__images {
-        @include flex($gap: 20px);
+        @include flex($gap: 20px, $direction: row);
 
-        @include mobile {
-            flex-direction: column;
-        }
     }
 
     img {
@@ -178,6 +195,13 @@
             position: absolute;
             bottom: 15%;
             left: -15%;
+
+            @include tablet {
+                left: -5%;
+                width: 30%;
+                border-radius: 30%;
+                padding: 10px;
+            }
         }
     }
 
@@ -186,10 +210,12 @@
         border-radius: 31px;
         background: #FFF;
         box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.25);
-        padding: 2px;
+        padding: 4px;
         max-width: 287px;
 
-        @include tablet {}
+        figure img {
+            width: 100%;
+        }
     }
 
     &-picture img {
@@ -200,7 +226,7 @@
         @include flex($direction: column, $justify: center);
 
         @include mobile {
-            width: 100%;
+            // width: 100%;
         }
     }
 
