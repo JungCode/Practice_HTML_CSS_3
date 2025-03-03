@@ -60,6 +60,10 @@
         width: 310px;
         min-height: 376px;
         @include flex($direction: column, $justify: space-between);
+        transition-duration: 0.2s;
+        &:hover{
+            box-shadow: 0px 0px 10px 0px rgba(78, 80, 85, 0.4);
+        }
     }
 
     &__desc {

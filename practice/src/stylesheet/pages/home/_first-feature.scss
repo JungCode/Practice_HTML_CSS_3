@@ -44,6 +44,11 @@
             @include flex ($gap: 5px, $align: center);
             background-color: $neutral-background-color;
             border-radius: 3px;
+            @include mobile{
+                justify-content: center;
+                max-width: 180px;
+                width: 100%;
+            }
         }
     }
 
@@ -184,7 +189,11 @@
         font-size: pxToRem(12);
 
         span {
+            cursor: pointer;
             color: $secondary-color;
+            &:hover{
+                color: $secondary-color-hover;
+            }
         }
     }
 }
