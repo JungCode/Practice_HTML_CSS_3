@@ -94,7 +94,11 @@
 
     &__desc {
         font-size: pxToRem(18);
-
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+        
         @include tablet {
             font-size: pxToRem(14);
         }

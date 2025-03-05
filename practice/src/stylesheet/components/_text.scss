@@ -11,7 +11,10 @@
 .description {
     font-size: pxToRem(18);
     line-height: pxToRem(22);
-
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
     &--center {
         text-align: center;
     }
