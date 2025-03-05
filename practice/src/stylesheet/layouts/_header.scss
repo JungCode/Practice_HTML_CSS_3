@@ -24,7 +24,9 @@
 
     &__logo {
         @include flex($align: center, $gap: 10px);
-
+        figure{
+            @include flex();
+        }
         @include tablet {
             gap: 7px;
         }
@@ -98,7 +100,7 @@
 }
 
 .menu {
-    height: 50px;
+    @include flex();
     &__list {
         @include flex($align: center);
         height: 100%;
@@ -110,6 +112,7 @@
         .link-main {
             transition-duration: 0.1s;
             border-radius: 5px;
+            padding: 10px;
             figure {
                 @include flex();
             }

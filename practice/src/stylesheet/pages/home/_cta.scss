@@ -8,11 +8,15 @@
             flex-direction: column;
         }
     }
-
-    &__header p {
-        max-width: 580px;
+    &__header{
+        @include tablet{
+            text-align: center;
+            @include flex($direction: column, $align: center);
+        }
+        p {
+            max-width: 580px;
+        }
     }
-
 }
 
 .middle-icon {

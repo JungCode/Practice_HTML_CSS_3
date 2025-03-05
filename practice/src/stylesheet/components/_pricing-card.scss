@@ -2,12 +2,24 @@
 
 .pricing-bottom {
     &-options {
-        @include flex($gap: 10px, $align: flex-end, $wrap: wrap, $justify: center);
+        @include flex($gap: 10px, $align: flex-end, $justify: center);
+        @include tablet{
+            flex-wrap: wrap;
+        }
     }
 
     &-item {
         border-radius: 10px;
-
+        max-width: 336px;
+        width: 100%;
+        @include tablet{
+            max-width: none;
+            width: 35%;
+        }
+        @include mobile{
+            max-width: 336px;
+            width: 100%;           
+        }
         &--activate {
             border: 5px solid $secondary-color;
 
