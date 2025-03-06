@@ -13,7 +13,7 @@
         }
 
         .preview-widget-img {
-            max-width: 944px;
+            width: 100%;
         }
 
         .about__aside {
@@ -25,6 +25,8 @@
         }
 
         .about__img {
+            max-width: 944px;
+            @include flex();
             @include mobile {
                 order: 3
             }

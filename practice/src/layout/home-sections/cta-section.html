@@ -10,17 +10,19 @@
             <include src="./components/email-form.html"></include>
         </div>
         <div class="cta-slider">
-            <ul class="cta-slider__container">
-                <each loop="item in ctaSlider">
-                    <include src="./components/cta-slider.html"></include>
-                </each>
+            <div class="cta-slider__container">
+                <ul>
+                    <each loop="item in ctaSlider">
+                        <include src="./components/cta-slider.html"></include>
+                    </each>
+                </ul>
                 <figure class="cta-slider__button cta-slider__button--left">
                     <img src="../assets/icons/ic-left-chervon.svg" alt="icon">
                 </figure>
                 <figure class="cta-slider__button cta-slider__button--right">
                     <img src="../assets/icons/ic-right-chervon.svg" alt="icon">
                 </figure>
-            </ul>
+            </div>
             <div class="cta-slider__copy-right">
                 <p>Widget powered</p>
                 <figure class="middle-icon">
