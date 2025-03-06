@@ -151,7 +151,7 @@
 
     &__content {
         padding: 37px;
-        @include flex($direction: column, $align: center, $gap: 22px);
+        @include flex($direction: column, $align: center, $gap: 11px);
     }
 
     &__desc {
@@ -166,6 +166,10 @@
         resize: none;
         height: 96px;
         color: $text-muted;
+    }
+
+    &__label{
+        visibility: hidden;
     }
 
     &__button {
