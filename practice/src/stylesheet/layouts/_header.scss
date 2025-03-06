@@ -234,8 +234,11 @@
         padding: 4px;
         max-width: 287px;
 
-        figure img {
-            width: 100%;
+        figure {
+            @include flex();
+            img {
+                width: 100%;
+            }
         }
     }
 
