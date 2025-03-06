@@ -7,6 +7,10 @@
     &__container {
         @include flex($gap: 0px);
         position: relative;
+
+        ul {
+            @include flex($gap: 0px);
+        }
     }
 
     &__item {
