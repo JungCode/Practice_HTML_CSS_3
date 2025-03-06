@@ -51,6 +51,15 @@
         .brands {
             @include flex($justify: center, $align: center, $direction: column, $gap: 20px);
 
+            &__item{
+                @include flex($justify: center, $align: center);
+            }
+
+            &__logo{
+                @include flex();
+                width: auto;
+            }
+
             &__list {
                 @include flex($gap: 46px, $justify: center);
 
@@ -92,10 +101,6 @@
     &__images {
         @include flex($gap: 20px, $direction: row);
 
-    }
-
-    img {
-        width: 100%;
     }
 }
 
@@ -184,7 +189,7 @@
     &-main {
         @include flex($direction: column, $gap: 15px);
         position: relative;
-
+        max-width: 497px;
         .instagram-icon-container {
             background-color: white;
             border-radius: 24.462px;
@@ -218,13 +223,18 @@
         }
     }
 
-    &-picture img {
-        max-width: 238px;
+    &-picture {
+        &--main{
+            max-width: 287px;
+        }
+        &--small{
+            max-width: 190px;
+        }
     }
 
     &-aside {
         @include flex($direction: column, $justify: center);
-
+        max-width: 190px;
         @include mobile {
             // width: 100%;
         }
