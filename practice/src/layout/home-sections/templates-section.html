@@ -14,17 +14,19 @@
                 <img src="../assets/icons/ic-arrow-right.svg" alt="arrow right">
             </figure>
         </button>
-        <ul class="slider__container">
-            <each loop="item in templates">
-                <include src="./components/slider-item.html" locals='{
-                    "sliderImg": "{{item.src}}",
-                    "sliderTitle": "{{item.title}}",
-                    "sliderDesc": "{{item.desc}}"
-                }'></include>
-            </each>
+        <div class="slider__container">
+            <ul class="slider__container">
+                <each loop="item in templates">
+                    <include src="./components/slider-item.html" locals='{
+                        "sliderImg": "{{item.src}}",
+                        "sliderTitle": "{{item.title}}",
+                        "sliderDesc": "{{item.desc}}"
+                    }'></include>
+                </each>
+            </ul>
             <div class="slider__pagination">
                 <each loop="item in [1,2,3]">
-                    <button>
+                    <div class="slider__pagination--button">
                         <if condition="item == 1">
                             <figure>
                                 <img src="../assets/icons/ic-filled-circle.svg" alt="fill circle icon">
@@ -35,9 +37,9 @@
                                 <img src="../assets/icons/ic-circle.svg" alt="fill circle icon">
                             </figure>
                         </else>
-                    </button>
+                    </div>
                 </each>
             </div>
-        </ul>
+        </div>
     </div>
 </section>
