@@ -1,18 +1,17 @@
 <section class="section-container">
     <div class="about__container">
-        <figure class="about__img">
-            <picture>
-                <img src="../assets/images/desktop/img-widget-preview.png" alt="widget preview"
-                    class="preview-widget-img">
-                <source media="(min-width: 767px)" srcset="../assets/images/mobile/img-widget-preview.png">
-            </picture>
-        </figure>
+        <picture class="about__img">
+            <img src="../assets/images/desktop/img-widget-preview.png" alt="widget preview" class="preview-widget-img">
+            <source media="(min-width: 767px)" srcset="../assets/images/mobile/img-widget-preview.png">
+        </picture>
         <div class="about__aside">
             <h2 class="title-secondary about__title">Widgets for every website.</h2>
             <ul class="frame-selection-container">
                 <each loop="item in frameSelections">
                     <li class="frame-selection__button {{item.activateClass}}">
-                        <img src="{{item.src}}" alt="icon">
+                        <figure>
+                            <img src="{{item.src}}" alt="icon">
+                        </figure>
                         {{item.text}}
                     </li>
                 </each>
