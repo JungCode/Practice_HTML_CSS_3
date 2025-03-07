@@ -50,7 +50,7 @@
         background: $hero-background-color;
         padding: 50px 20px;
         @include flex($gap: 75px, $direction: column);
-        margin-top: 30px;
+        margin-top: 70px;
 
         .brands {
             @include flex($justify: center, $align: center, $direction: column, $gap: 20px);
