@@ -12,13 +12,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/transformer-sass":"2.13.3",
+    "@parcel/transformer-sass": "2.13.3",
     "parcel": "^2.13.3",
     "posthtml": "^0.16.6",
     "posthtml-doctype": "^1.1.1",
     "posthtml-expressions": "^1.11.4",
     "posthtml-include": "^2.0.1",
-    "sass": "^1.84.0",
-    "svgo": "^3.3.2"
+    "sass": "^1.84.0"
+  },
+  "dependencies": {
+    "clean": "^4.0.2"
   }
 }
