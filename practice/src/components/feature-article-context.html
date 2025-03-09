@@ -1,0 +1,20 @@
+<article class="second-feature-content__aside">
+    <div class="second-feature-content__label">
+        <button class="label label--purple">
+            <figure><img src="../assets/icons/{{item.icon}}.svg" alt="icon"></figure>
+            {{item.labelText}}
+        </button>
+    </div>
+    <h3 class="second-feature-content__title title-secondary">{{item.title}}
+    </h3>
+    <ul class="second-feature-content__list">
+        <each loop="itemOfList in {{item.list}}">
+            <li class="second-feature-content__item description {{itemOfList.class}}">
+                <figure>
+                    <img src="../assets/icons/ic-checkmark.svg" alt="checkmark">
+                </figure>
+                {{itemOfList.text}}
+            </li>
+        </each>
+    </ul>
+</article>
